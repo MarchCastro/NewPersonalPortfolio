@@ -1,7 +1,62 @@
 <template>
   <div id="homeCard" class="section">
     <div class="card">
-      <span>hola</span>
+      
+      <!-- ovals -->
+      <div class="oval one purple-two"></div>
+      <div class="oval two purple-two"></div>
+      <div class="oval three purple-one"></div>
+      <div class="oval four purple-one"></div>
+      <div class="oval five purple-one"></div>
+      <div class="oval six purple-three"></div>
+      <div class="oval seven purple-three"></div>
+      <div class="oval eight purple-two"></div>
+      <div class="oval nine purple-four"></div>
+      <div class="oval ten purple-two"></div>
+      <div class="oval eleven purple-one"></div>
+      <div class="oval twelve purple-four" id="oval-12"></div>
+      <div class="oval thirteen purple-four" id="oval-13"></div>
+      <div class="oval fourteen purple-one" id="oval-14"></div>
+      <div class="oval fifteen purple-two" id="oval-15"></div>
+      <!-- end ovals -->
+
+      <div class="name"> Marcela <br> Castro Flores </div>
+
+      <div class="job"> UI/UX Designer </div>
+
+      <img class="profile-picture" src="../assets/img/me-picture@3x.png">
+
+      <div class="follow-me">
+        <span> Follow me </span>
+        <img class="arrow" src="../assets/img/arrow.svg">
+        
+        <a class="linkedin" href="https://linkedin.com/in/marcela-castro-flores" target="_blank">
+          <img src="../assets/img/linkedin-border.svg">
+          <img src="../assets/img/linkedin-border-hover.svg" class="hover">
+        </a>
+
+        <a class="angelist" href="https://angel.co/marcela-castro-flores" target="_blank">
+          <img src="../assets/img/angelist.svg">
+          <img src="../assets/img/angelist-hover.svg" class="hover">
+        </a>
+        
+      </div>
+      
+      <div class="logo-images">
+          <a v-bind:href="url_angelist" target="_blank">
+              <img :src="angelist_logo" class="angelist">
+          </a>
+      </div>
+      <div class="logo-images">
+          <a v-bind:href="url_linkedin" target="_blank">
+              <img :src="linkedin_logo" class="linkedin">
+          </a>
+      </div>
+      <div class="logo-images">
+          <img :src="arrow_home" class="arrow">
+      </div>
+      
+
     </div>
   </div>
 </template>
@@ -14,4 +69,219 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+  .oval
+    border-radius: 50%
+    position: absolute
+
+    &.one
+
+    &.two
+
+    &.three
+
+    &.four
+
+    &.five
+
+    &.six
+
+    &.seven
+
+    &.eight
+
+    &.nine
+
+    &.ten
+
+    &.eleven
+
+    &.twelve
+
+    &.purple-one
+      background: #843b62
+
+    &.purple-two
+      background:  #74546a
+
+    &.purple-three
+      background: #6d435a
+
+    &.purple-four
+      background: #352d39
+  
+  .name
+    color: #b75e5f
+    font-family: 'CarosBold'
+    font-size: 50px
+    margin-left: 202px
+    margin-top: 260px
+  
+  .job
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 50px
+    margin-left: 202px
+    margin-top: 60px
+
+  .profile-picture
+    height: 371px
+    left: 758px
+    position: absolute
+    top: 177px
+    width: 371px
+
+  .follow-me
+    font-family: 'CarosBold'
+    font-size: 15px
+    left: -30px
+    line-height: 40px
+    position: absolute
+    top: 350px
+    transform: rotate3d(0, 0, 1, 270deg)
+    
+    a
+      display: inline-block
+
+    img
+      transform: rotate3d(0, 0, 1, 90deg)
+      vertical-align: middle
+
+    .arrow
+      height: 17px
+      width: 26px
+
+    .linkedin
+      height: 23px
+      margin-left: 43px
+      margin-right: 19px
+      position: relative
+      width: 23px
+
+      img
+        margin-top: 6px
+        position: absolute
+
+        &.hover
+          opacity: 0
+
+      &:hover
+        img.hover
+          opacity: 1
+
+    .angelist
+      height: 23px
+      margin-right: 19px
+      position: relative
+      width: 23px
+
+      img
+        margin-top: 6px
+        position: absolute
+
+        &.hover
+          opacity: 0
+
+      &:hover
+        img.hover
+          opacity: 1
+
+  @media screen and (min-width: 576px)
+
+  @media screen and (min-width: 576px)
+
+  @media screen and (min-width: 1440px)
+    .oval
+      &.one
+        height: 15px
+        left: 45px
+        top: 45px
+        width: 15px
+
+      &.two
+        height: 27px
+        left: 178px
+        top: 26px
+        width: 27px
+
+      &.three
+        height: 80px
+        left: 64px
+        top: 97px
+        width: 80px
+
+      &.four
+        height: 65px
+        left: 712px
+        top: 144px
+        width: 65px
+
+      &.five
+        height: 235px
+        left: 1031px
+        top: 115px
+        width: 235px
+
+      &.six
+        height: 235px
+        left: 1031px
+        top: 115px
+        width: 235px
+
+      &.seven
+        height: 152px
+        left: 671px
+        top: 347px
+        width: 152px
+
+      &.eight
+        height: 53px
+        left: 1221px
+        top: 422px
+        width: 53px
+
+      &.nine
+        height: 198px
+        left: 1000px
+        top: 415px
+        width: 198px
+
+      &.ten
+        height: 15px
+        left: 144px
+        top: 541px
+        width: 15px
+
+      &.eleven
+        height: 15px
+        left: 37px
+        top: 614px
+        width: 15px
+
+      &.twelve
+        height: 27px
+        left: 128px
+        top: 641px
+        width: 27px
+
+      &.thirteen
+        height: 107px
+        left: 805px
+        top: 562px
+        width: 107px
+
+      &.fourteen
+        height: 41px
+        left: 1000px
+        top: 647px
+        width: 41px
+
+      &.fifteen
+        height: 15px
+        left: 1206px
+        top: 668px
+        width: 15px
+
+
+
+
 </style>

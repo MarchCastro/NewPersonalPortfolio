@@ -54,6 +54,18 @@ export default {
     margin: 0
     padding: 0
 
+  @font-face
+    font-family: 'CarosLight'
+    src: url('assets/fonts/CarosLight.otf')
+
+  @font-face
+    font-family: 'CarosBold'
+    src: url('assets/fonts/CarosBold.otf')
+
+  @font-face
+    font-family: 'CarosMedium'
+    src: url('assets/fonts/CarosMedium.otf')
+
   #nav
     background: orange
     position: fixed
@@ -62,6 +74,7 @@ export default {
   #app
     background-color: #321f37
     min-height: calc(100vh - 100px)
+    font-family: 'CarosLight'
 
   .section    
     height: 100vh
@@ -76,7 +89,13 @@ export default {
       background: #FFF
       border-radius: 14px
       height: calc(100vh - 100px)
+      max-width: 1340px
+      overflow: hidden
+      position: relative
       width: calc(100vw - 100px)
 
+  @media screen and (min-width: 1440px)
+    .card
+      margin: 0 auto
 
 </style>
