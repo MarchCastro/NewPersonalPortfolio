@@ -1,5 +1,27 @@
 <template>
   <div id="app">
+    <ul id="nav">
+      <li>
+        <a href="#homeCard"> home </a>
+      </li>
+  
+      <li>
+        <a href="#aboutMeCard"> about </a>
+      </li>
+
+      <li>
+        <a href="#portfolioCard"> portfolio </a>
+      </li>
+
+      <li>
+        <a href="#experienceCard"> experience </a>
+      </li>
+
+      <li>
+        <a href="#educationCard"> education </a>
+      </li>
+    </ul>
+
     <HomeCard/>
     <AboutMeCard/>
     <PortfolioCard/>
@@ -32,17 +54,29 @@ export default {
     margin: 0
     padding: 0
 
+  #nav
+    background: orange
+    position: fixed
+    right: 0
+
   #app
     background-color: #321f37
-    min-height: calc(100vh - 50px)
-    padding-top: 50px
+    min-height: calc(100vh - 100px)
 
-  .card
-    background: #FFF
-    border-radius: 14px
-    height: calc(100vh - 100px)
-    margin: 0 0 50px 50px
+  .section    
+    height: 100vh
+    padding-left: 50px
+    padding-top: 50px
     width: calc(100vw - 100px)
+
+    &:last-child
+      height: calc(100vh - 50px)
+
+    .card
+      background: #FFF
+      border-radius: 14px
+      height: calc(100vh - 100px)
+      width: calc(100vw - 100px)
 
 
 </style>

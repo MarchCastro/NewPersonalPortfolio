@@ -1,6 +1,8 @@
 <template>
-  <div id="homeCard" class="card">
-    <span>hola</span>
+  <div id="homeCard" class="section">
+    <div class="card">
+      <span>hola</span>
+    </div>
   </div>
 </template>
 

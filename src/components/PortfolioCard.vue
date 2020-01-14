@@ -1,6 +1,8 @@
 <template>
-  <div id="portfolioCard" class="card">
-    <span>portfolio</span>
+  <div id="portfolioCard" class="section">
+    <div class="card">
+      <span>portfolio</span>
+    </div>
   </div>
 </template>
 

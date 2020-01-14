@@ -1,6 +1,8 @@
 <template>
-  <div id="experienceCard" class="card">
-    <span>experience</span>
+  <div id="experienceCard" class="section">
+    <div class="card">
+      <span>experience</span>
+    </div>
   </div>
 </template>
 

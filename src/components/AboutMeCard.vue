@@ -1,6 +1,8 @@
 <template>
-  <div id="aboutMeCard" class="card">
-    <span>aboutme</span>
+  <div id="aboutMeCard" class="section">
+    <div class="card">
+      <span>about</span>
+    </div>
   </div>
 </template>
 
