@@ -1,12 +1,12 @@
 <template>
-  <div id="homeCard" class="card">
-    <span>hola</span>
+  <div id="experienceCard" class="card">
+    <span>experience</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeCard'
+  name: 'ExperienceCard'
 }
 </script>
 
