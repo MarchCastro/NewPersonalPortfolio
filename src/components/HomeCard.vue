@@ -119,7 +119,7 @@ export default {
   .job
     color: #364252
     font-family: 'CarosMedium'
-    font-size: 50px
+    font-size: 40px
     margin-left: 202px
     margin-top: 60px
 
@@ -131,6 +131,7 @@ export default {
     width: 371px
 
   .follow-me
+    color: #364252
     font-family: 'CarosBold'
     font-size: 15px
     left: -30px
@@ -141,25 +142,27 @@ export default {
     
     a
       display: inline-block
+      vertical-align: top
 
     img
       transform: rotate3d(0, 0, 1, 90deg)
       vertical-align: middle
 
     .arrow
-      height: 17px
-      width: 26px
+      height: 22xpx
+      margin-left: 40px
+      width: 13px
 
     .linkedin
-      height: 23px
       margin-left: 43px
-      margin-right: 19px
+      margin-right: 40px
       position: relative
-      width: 23px
-
+      
       img
-        margin-top: 6px
+        height: 23px
+        margin-top: 10px
         position: absolute
+        width: 25px
 
         &.hover
           opacity: 0
@@ -169,14 +172,14 @@ export default {
           opacity: 1
 
     .angelist
-      height: 23px
       margin-right: 19px
       position: relative
-      width: 23px
 
       img
-        margin-top: 6px
+        height: 23px  
+        margin-top: 10px
         position: absolute
+        width: 25px
 
         &.hover
           opacity: 0

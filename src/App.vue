@@ -73,26 +73,26 @@ export default {
 
   #app
     background-color: #321f37
-    min-height: calc(100vh - 100px)
+    min-height: calc(100vh - 120px)
     font-family: 'CarosLight'
 
   .section    
     height: 100vh
     padding-left: 50px
-    padding-top: 50px
+    padding-top: 30px
     width: calc(100vw - 100px)
 
     &:last-child
-      height: calc(100vh - 50px)
+      height: calc(100vh - 30px)
 
     .card
       background: #FFF
-      border-radius: 14px
-      height: calc(100vh - 100px)
+      border-radius: 32px
+      height: calc(100vh - 60px)
       max-width: 1340px
       overflow: hidden
       position: relative
-      width: calc(100vw - 100px)
+      width: calc(100vw - 60px)
 
   @media screen and (min-width: 1440px)
     .card
