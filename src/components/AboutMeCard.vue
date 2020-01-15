@@ -20,7 +20,13 @@
         <br> <br>I know that no mather how much time I spend working, I won't get bored because at the end it's all about making art and doing what you love. </div>
 
       <!-- Passions icons -->
-
+      <div class="passion-icon-div">
+        <img class="passion-icon" src="../assets/img/flat-icon-sax.png">
+        <img class="passion-icon" src="../assets/img/flat-icon-cinema.png">
+        <img class="passion-icon" src="../assets/img/flat-icon-dog2.png">
+        <img class="passion-icon" src="../assets/img/flat-icon-travel.png">
+        <img class="passion-icon" src="../assets/img/flat-icon-draw.png">
+      </div>
 
       <button class="button-cv">Download CV</button>
 
@@ -91,6 +97,15 @@ export default {
     background-color: #fff
     color: #b75e5f
     border: 2px solid #b75e5f
+
+  .passion-icon-div 
+    margin-left: 597px
+    margin-top: 29px
+
+  .passion-icon
+    height: 41px    
+    margin-right: 16px
+    width: 41px
     
     
   @media screen and (min-width: 1440px)
