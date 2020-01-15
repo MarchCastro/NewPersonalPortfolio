@@ -14,6 +14,11 @@
 
       <img class="profile-picture" src="../assets/img/about-me@3x.png">
 
+      <div class="title-page"> Who am I? </div>
+
+      <div class="description"> I’m a Software Engineer with a growing interest on UI/UX Design from Mexico City. I recently discovered that in this area I can explote all my passions such as designing and drawing.
+        <br> <br>I know that no mather how much time I spend working, I won't get bored because at the end it's all about making art and doing what you love. </div>
+
     </div>
   </div>
 </template>
@@ -29,30 +34,6 @@ export default {
   .oval
     border-radius: 50%
     position: absolute
-
-    &.one
-
-    &.two
-
-    &.three
-
-    &.four
-
-    &.five
-
-    &.six
-
-    &.seven
-
-    &.eight
-
-    &.nine
-
-    &.ten
-
-    &.eleven
-
-    &.twelve
 
     &.purple-one
       background: #843b62
@@ -72,6 +53,22 @@ export default {
     position: absolute
     top: 184px
     width: 192px
+  
+  .title-page
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 40px
+    margin-left: 597px
+    margin-top: 143px
+  
+  .description
+    color: #364252
+    font-family: 'CarosLight'
+    font-size: 14px
+    margin-left: 597px
+    margin-top: 20px
+    margin-right: 164px
+
     
   @media screen and (min-width: 1440px)
     .oval
