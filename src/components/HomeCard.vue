@@ -7,17 +7,18 @@
       <div class="oval two purple-two"></div>
       <div class="oval three purple-one"></div>
       <div class="oval four purple-one"></div>
-      <div class="oval five purple-one"></div>
-      <div class="oval six purple-three"></div>
-      <div class="oval seven purple-three"></div>
-      <div class="oval eight purple-two"></div>
-      <div class="oval nine purple-four"></div>
-      <div class="oval ten purple-two"></div>
-      <div class="oval eleven purple-one"></div>
-      <div class="oval twelve purple-four" id="oval-12"></div>
-      <div class="oval thirteen purple-four" id="oval-13"></div>
-      <div class="oval fourteen purple-one" id="oval-14"></div>
-      <div class="oval fifteen purple-two" id="oval-15"></div>
+      <div class="oval five purple-two"></div>
+      <div class="oval six purple-one"></div>
+      <div class="oval seven purple-one"></div>
+      <div class="oval eight purple-three"></div>
+      <div class="oval nine purple-two"></div>
+      <div class="oval ten purple-four"></div>
+      <div class="oval eleven purple-two"></div>
+      <div class="oval twelve purple-one"></div>
+      <div class="oval thirteen purple-two"></div>
+      <div class="oval fourteen purple-four"></div>
+      <div class="oval fifteen purple-one"></div>
+      <div class="oval sixteen purple-two"></div>
       <!-- end ovals -->
 
       <div class="name"> Marcela <br> Castro Flores </div>
@@ -219,10 +220,10 @@ export default {
         width: 65px
 
       &.five
-        height: 235px
-        left: 1031px
-        top: 115px
-        width: 235px
+        height: 15px
+        left: 912px
+        top: 129px
+        width: 15px
 
       &.six
         height: 235px
@@ -231,54 +232,60 @@ export default {
         width: 235px
 
       &.seven
+        height: 235px
+        left: 1031px
+        top: 115px
+        width: 235px
+
+      &.eight
         height: 152px
         left: 671px
         top: 347px
         width: 152px
 
-      &.eight
+      &.nine
         height: 53px
         left: 1221px
         top: 422px
         width: 53px
 
-      &.nine
+      &.ten
         height: 198px
         left: 1000px
         top: 415px
         width: 198px
 
-      &.ten
+      &.eleven
         height: 15px
         left: 144px
         top: 541px
         width: 15px
 
-      &.eleven
+      &.twelve
         height: 15px
         left: 37px
         top: 614px
         width: 15px
 
-      &.twelve
+      &.thirteen
         height: 27px
         left: 128px
         top: 641px
         width: 27px
 
-      &.thirteen
+      &.fourteen
         height: 107px
         left: 805px
         top: 562px
         width: 107px
 
-      &.fourteen
+      &.fifteen
         height: 41px
         left: 1000px
         top: 647px
         width: 41px
 
-      &.fifteen
+      &.sixteen
         height: 15px
         left: 1206px
         top: 668px
