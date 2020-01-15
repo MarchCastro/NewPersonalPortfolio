@@ -10,6 +10,10 @@
       </li>
 
       <li>
+        <a href="#professionalBackgroundCard"> about 2</a>
+      </li>
+
+      <li>
         <a href="#portfolioCard"> portfolio </a>
       </li>
 
@@ -24,6 +28,7 @@
 
     <HomeCard/>
     <AboutMeCard/>
+    <ProfessionalBackgroundCard/>
     <PortfolioCard/>
     <ExperienceCard/>
     <EducationCard/>
@@ -33,6 +38,7 @@
 <script>
 import HomeCard from './components/HomeCard.vue'
 import AboutMeCard from './components/AboutMeCard.vue'
+import ProfessionalBackgroundCard from './components/ProfessionalBackgroundCard.vue'
 import PortfolioCard from './components/PortfolioCard.vue'
 import ExperienceCard from './components/ExperienceCard.vue'
 import EducationCard from './components/EducationCard.vue'
@@ -42,6 +48,7 @@ export default {
   components: {
     HomeCard,
     AboutMeCard,
+    ProfessionalBackgroundCard,
     PortfolioCard,
     ExperienceCard,
     EducationCard

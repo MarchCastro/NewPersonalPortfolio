@@ -30,6 +30,13 @@
 
       <button class="button-cv">Download CV</button>
 
+      <!-- Slider options -->
+      <img class="actual-slider" src="../assets/img/actual-option@3x.png">
+      
+      <a href="#section-aboutme2">
+        <img class="second-slider" src="../assets/img/second-option@3x.png">
+      </a>
+      <hr>
     </div>
   </div>
 </template>
@@ -106,8 +113,26 @@ export default {
     height: 41px    
     margin-right: 16px
     width: 41px
-    
-    
+  
+  .actual-slider
+    height: 38px
+    margin-left: 851px
+    margin-top: 113px
+    width: 38px
+  
+  .second-slider  
+    height: 29px
+    margin-left: 1080px
+    margin-top: 113px
+    width: 29px
+
+  .hr
+    border-top: dotted 3px
+    height: 1px
+    margin-top: 596px
+    margin-left: 863px
+    width: 180px
+        
   @media screen and (min-width: 1440px)
     .oval
       &.one
