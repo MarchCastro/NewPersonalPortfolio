@@ -19,6 +19,11 @@
       <div class="description"> I’m a Software Engineer with a growing interest on UI/UX Design from Mexico City. I recently discovered that in this area I can explote all my passions such as designing and drawing.
         <br> <br>I know that no mather how much time I spend working, I won't get bored because at the end it's all about making art and doing what you love. </div>
 
+      <!-- Passions icons -->
+
+
+      <button class="button-cv">Download CV</button>
+
     </div>
   </div>
 </template>
@@ -68,7 +73,25 @@ export default {
     margin-left: 597px
     margin-top: 20px
     margin-right: 164px
-
+  
+  .button-cv
+    background-color: #b75e5f
+    border: none
+    border-radius: 4px
+    color: white
+    cursor: pointer
+    font-family: 'CarosMedium'
+    font-size: 14px
+    height: 36px
+    margin-left: 1012px
+    margin-top: 116px
+    width: 165px
+  
+  .button-cv:hover
+    background-color: #fff
+    color: #b75e5f
+    border: 2px solid #b75e5f
+    
     
   @media screen and (min-width: 1440px)
     .oval
