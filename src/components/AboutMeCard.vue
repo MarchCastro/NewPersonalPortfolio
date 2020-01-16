@@ -27,8 +27,10 @@
         <img class="passion-icon" src="../assets/img/flat-icon-travel.png">
         <img class="passion-icon" src="../assets/img/flat-icon-draw.png">
       </div>
-
-      <button class="button-cv">Download CV</button>
+      <a href="https://docs.google.com/document/d/1S1TakiBraD6ywFT-RbG5DzFS3cFNWPZnnKo_x60n--8/edit?usp=sharing">
+        <button class="button-cv">Download CV</button>
+      </a>
+      
 
       <!-- Slider options -->
       <img class="actual-slider" src="../assets/img/actual-option@3x.png">
@@ -97,7 +99,7 @@ export default {
     font-size: 14px
     height: 36px
     margin-left: 1012px
-    margin-top: 116px
+    margin-top: 46px
     width: 165px
   
   .button-cv:hover

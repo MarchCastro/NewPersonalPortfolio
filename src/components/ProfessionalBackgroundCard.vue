@@ -72,6 +72,7 @@
 export default {
   name: 'ProfessionalBackgroundCard'
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
