@@ -12,21 +12,36 @@
         <div class="skill-card">
           <div class="top-card-rectangle"></div>
           <img class="card-icon" src="../assets/img/languages.png">
+          <div class="title-card-div">
+            <p class="title-card"> Languages </p>
+          </div>
+          <ul>
+            <li></li>
+          </ul>
         </div>
         <!--Technologies card -->
         <div class="skill-card">
           <div class="top-card-rectangle"></div>
           <img class="card-icon" src="../assets/img/technologies.png">
+          <div class="title-card-div">
+            <p class="title-card"> Technologies </p>
+          </div>
         </div>
         <!--Skills card -->
         <div class="skill-card">
           <div class="top-card-rectangle"></div>
           <img class="card-icon" src="../assets/img/skills1.png">
+          <div class="title-card-div">
+            <p class="title-card"> Skills </p>
+          </div>
         </div>
         <!--Tools card -->
         <div class="skill-card">
           <div class="top-card-rectangle"></div>
           <img class="card-icon" src="../assets/img/code1.png">
+          <div class="title-card-div">
+            <p class="title-card"> Dev. tools </p>
+          </div>
         </div>
       </div>
     </div>
@@ -79,6 +94,25 @@ export default {
     margin-left: 95px
     margin-top: 38px
     width: 72px
+  
+  .title-card-div
+    margin-top: 10px
+    text-align: center
+    width: auto
+
+  .title-card
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 18px
+  
+  .subtitle-card-text
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 15px
+    margin-left: 110px
+  
+  ul 
+    list-style: none
 
 
   @media screen and (min-width: 1440px)
