@@ -15,9 +15,13 @@
           <div class="title-card-div">
             <p class="title-card"> Languages </p>
           </div>
-          <ul>
-            <li></li>
-          </ul>
+          <p class="subtitle-card"> Spanish </p>
+          <p class="content-card"> Native </p>
+          <p class="subtitle-card"> English </p>
+          <p class="content-card"> FCE First Certificate B2 </p>
+          <p class="subtitle-card"> French </p>
+          <p class="content-card"> Delf B2 </p>
+          
         </div>
         <!--Technologies card -->
         <div class="skill-card">
@@ -104,12 +108,22 @@ export default {
     color: #364252
     font-family: 'CarosMedium'
     font-size: 18px
-  
-  .subtitle-card-text
+
+  .subtitle-card
     color: #364252
     font-family: 'CarosMedium'
     font-size: 15px
-    margin-left: 110px
+    line-height: 0px
+    margin-left: 43px
+    margin-top: 15px
+    text-align: left
+  
+  .content-card
+    color: #364252
+    font-family: 'CarosLight'
+    font-size: 13px
+    margin-left: 43px
+    text-align: left
   
   ul 
     list-style: none
