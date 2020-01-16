@@ -21,8 +21,8 @@
           <p class="content-card"> FCE First Certificate B2 </p>
           <p class="subtitle-card"> French </p>
           <p class="content-card"> Delf B2 </p>
-          
         </div>
+
         <!--Technologies card -->
         <div class="skill-card">
           <div class="top-card-rectangle"></div>
@@ -30,7 +30,13 @@
           <div class="title-card-div">
             <p class="title-card"> Technologies </p>
           </div>
+          <p class="subtitle-card"> Design tools </p>
+          <p class="content-card"> Sketch </p>
+          <p class="content-card"> Adobe XD </p>
+          <p class="content-card"> inVision </p>
+          <p class="content-card"> Zeplin </p>
         </div>
+
         <!--Skills card -->
         <div class="skill-card">
           <div class="top-card-rectangle"></div>
@@ -38,6 +44,11 @@
           <div class="title-card-div">
             <p class="title-card"> Skills </p>
           </div>
+          <p class="content-card"> Wireframing </p>
+          <p class="content-card"> User/Task Flow Design </p>
+          <p class="content-card"> Interaction Map Design </p>
+          <p class="content-card"> Sitemap Design </p>
+          <p class="content-card"> Mobile Interface Design </p>
         </div>
         <!--Tools card -->
         <div class="skill-card">
@@ -46,6 +57,11 @@
           <div class="title-card-div">
             <p class="title-card"> Dev. tools </p>
           </div>
+          <p class="subtitle-card"> Dev. Languages </p>
+          <p class="content-card"> Java </p>
+          <p class="content-card"> C/C++ </p>
+          <p class="subtitle-card"> Databases </p>
+          <p class="content-card"> MySQL/Oracle PLSQL </p>
         </div>
       </div>
     </div>
@@ -124,9 +140,6 @@ export default {
     font-size: 13px
     margin-left: 43px
     text-align: left
-  
-  ul 
-    list-style: none
 
 
   @media screen and (min-width: 1440px)
