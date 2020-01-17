@@ -114,8 +114,8 @@ export default {
   
   .button-cv:hover
     background-color: #fff
-    color: #b75e5f
     border: 2px solid #b75e5f
+    color: #b75e5f
 
   .passion-icon-div 
     margin-left: 597px

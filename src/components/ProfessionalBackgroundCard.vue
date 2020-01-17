@@ -113,17 +113,18 @@ export default {
   .skill-card
     border-radius: 8px
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+    display: inline-block
     height: 330px
     margin: 25px
     width: 261px
-    display: inline-block
-  
+    
   .top-card-rectangle
     background-color: #875970
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px
     height: 10px
     width: 261px 
-    border-top-right-radius: 8px
-    border-top-left-radius: 8px
+    
   
   .card-icon  
     height: 72px
