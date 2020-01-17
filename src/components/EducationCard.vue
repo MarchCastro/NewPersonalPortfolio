@@ -13,10 +13,10 @@
       </div>
 
       <!-- Cards subtitle --> 
-      <div class="card-subtitle-div">
-        <div class="card-subtitle"> California Institute of Arts - Coursera </div>
-        <div class="card-subtitle"> Université de Technologie de Compiègne </div>
-        <div class="card-subtitle"> Escuela Superior de Cómputo </div>
+      <div class="card-subtitle-div">  
+        <a href="https://www.coursera.org/specializations/ui-ux-design" class="card-subtitle" target="_blank"> California Institute of Arts - Coursera </a>
+        <a href="https://www.utc.fr/" class="card-subtitle" target="_blank"> Université de Technologie de Compiègne </a>
+        <a href="http://www.escom.ipn.mx/" class="card-subtitle" target="_blank"> Escuela Superior de Cómputo </a>
       </div>
       <!-- Cards-->
       <div class="card-div">
@@ -34,6 +34,14 @@
         <!--ESCOM card -->
         <img class="education-card" src="../assets/img/ESCOM.png">
       </div>
+
+      <!-- Cards date --> 
+      <div class="card-date-div">
+        <div class="card-date"> 2019 - Present </div>
+        <div class="card-date"> 2017 - 2018 </div>
+        <div class="card-date"> 2014 - 2019 </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -88,6 +96,22 @@ export default {
     font-size: 18px
     margin: 19px
     text-align: center
+    text-decoration: none
+    width: 369px
+  
+  .card-date-div
+    display: flex
+    margin-left: 65px
+    margin-right: 65px
+    vertical-align: middle
+
+  .card-date
+    color: #364252
+    font-family: 'CarosLight'
+    font-size: 15px
+    margin: 0 19px 0 19px
+    opacity: 0.65
+    text-align: right
     width: 369px
 
   .card-div
