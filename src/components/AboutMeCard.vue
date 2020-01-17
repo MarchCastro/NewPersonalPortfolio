@@ -33,12 +33,21 @@
       
 
       <!-- Slider options -->
-      <img class="actual-slider" src="../assets/img/actual-option@3x.png">
+      <div class="slider-options">
+        <img class="actual-slider" src="../assets/img/actual-option@3x.png">
+        
+        <hr class="hr">
+        
+        <a href="#section-aboutme2">
+          <img class="second-slider" src="../assets/img/second-option@3x.png">
+        </a>
+      </div>
+      <div class="slider-text-div">
+        <p class="actual-slider-text"> Who am I? </p>
+        <p class="second-slider-text"> Professional Background </p>
+      </div>
       
-      <a href="#section-aboutme2">
-        <img class="second-slider" src="../assets/img/second-option@3x.png">
-      </a>
-      <hr>
+      
     </div>
   </div>
 </template>
@@ -88,6 +97,7 @@ export default {
     margin-left: 597px
     margin-top: 20px
     margin-right: 164px
+    text-align: justify
   
   .button-cv
     background-color: #b75e5f
@@ -115,25 +125,47 @@ export default {
     height: 41px    
     margin-right: 16px
     width: 41px
+
+  .slider-options
+    display: inline-flex
+    margin-left: 851px
+    margin-top: 113px
+    vertical-align: middle
   
   .actual-slider
     height: 38px
-    margin-left: 851px
-    margin-top: 113px
     width: 38px
   
   .second-slider  
     height: 29px
-    margin-left: 1080px
-    margin-top: 113px
+    margin-right: 232px
+    margin-top: 10px
     width: 29px
 
   .hr
-    border-top: dotted 3px
+    border-top: dotted 5px
     height: 1px
-    margin-top: 596px
-    margin-left: 863px
+    margin-top: 20px
     width: 180px
+  
+  .slider-text-div 
+    display: flex
+    height: 18px
+    margin-top: 8px
+  
+  .actual-slider-text
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 15px
+    margin-left: 831px
+    
+  .second-slider-text
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 15px
+    margin-left: 80px
+    margin-right: 164px
+
         
   @media screen and (min-width: 1440px)
     .oval

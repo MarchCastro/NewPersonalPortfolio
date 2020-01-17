@@ -64,6 +64,22 @@
           <p class="content-card"> MySQL/Oracle PLSQL </p>
         </div>
       </div>
+
+      <!-- Slider options -->
+      <div class="slider-options">
+        <img class="actual-slider" src="../assets/img/actual-option@3x.png">
+        
+        <hr class="hr">
+        
+        <a href="#section-aboutme2">
+          <img class="second-slider" src="../assets/img/second-option@3x.png">
+        </a>
+      </div>
+      <div class="slider-text-div">
+        <p class="actual-slider-text"> Who am I? </p>
+        <p class="second-slider-text"> Professional Background </p>
+      </div>
+
     </div>
   </div>
 </template>
@@ -72,7 +88,6 @@
 export default {
   name: 'ProfessionalBackgroundCard'
 }
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -141,6 +156,46 @@ export default {
     font-size: 13px
     margin-left: 43px
     text-align: left
+  
+  .slider-options
+    display: inline-flex
+    margin-left: 851px
+    margin-top: 20px
+    vertical-align: middle
+  
+  .actual-slider
+    height: 38px
+    width: 38px
+  
+  .second-slider  
+    height: 29px
+    margin-right: 232px
+    margin-top: 10px
+    width: 29px
+
+  .hr
+    border-top: dotted 5px
+    height: 1px
+    margin-top: 20px
+    width: 180px
+  
+  .slider-text-div 
+    display: flex
+    height: 18px
+    margin-top: 8px
+  
+  .actual-slider-text
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 15px
+    margin-left: 831px
+    
+  .second-slider-text
+    color: #364252
+    font-family: 'CarosMedium'
+    font-size: 15px
+    margin-left: 80px
+    margin-right: 164px
 
 
   @media screen and (min-width: 1440px)
