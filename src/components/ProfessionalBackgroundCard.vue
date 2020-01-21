@@ -107,26 +107,28 @@ export default {
     margin-top: 7px
   
   .card-div
-    margin-left: 50px
-    margin-top: 43px
+    margin: 43px 67px 0 67px
+    width: calc(100% - 134px)
     
-  .skill-card
-    border-radius: 8px
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
-    display: inline-block
-    height: 330px
-    margin: 25px
-    vertical-align: top
-    width: 261px
+    .skill-card
+      border-radius: 8px
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+      display: inline-block
+      height: 330px
+      margin-right: 56px
+      vertical-align: top
+      width: calc(25% - 42px)
+
+      &:last-child
+        margin-right: 0
+
+      .top-card-rectangle
+        background-color: #875970
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        height: 10px
+        width: 100%
     
-  .top-card-rectangle
-    background-color: #875970
-    border-top-left-radius: 8px
-    border-top-right-radius: 8px
-    height: 10px
-    width: 261px 
-    
-  
   .card-icon  
     height: 72px
     margin-left: 95px
