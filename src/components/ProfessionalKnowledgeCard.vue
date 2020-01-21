@@ -1,5 +1,5 @@
 <template>
-  <div id="professionalBackgroundCard" class="section">
+  <div id="professionalKnowledgeCard" class="section">
     <div class="card">
       
       <div class="title-page"> Professional knowledge </div>
@@ -86,7 +86,7 @@
 
 <script>
 export default {
-  name: 'ProfessionalBackgroundCard'
+  name: 'ProfessionalKnowledgeCard'
 }
 </script>
 

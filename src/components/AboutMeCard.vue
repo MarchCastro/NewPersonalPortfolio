@@ -1,65 +1,82 @@
 <template>
   <div id="aboutMeCard" class="section">
     <div class="card">
-      <!-- Picture ovals -->
-      <div class="oval one purple-one"></div>
-      <div class="oval two purple-two"></div>
-      <div class="oval three purple-one"></div>
-      <div class="oval four purple-three"></div>
-      <div class="oval five purple-two"></div>
-      <div class="oval six purple-four"></div>
-      <div class="oval seven purple-four"></div>
-      <div class="oval eight purple-one"></div>
-      <div class="oval nine purple-two"></div>
+      <div class="first slider-section">
+        <!-- Picture ovals -->
+        <div class="oval one purple-one"></div>
+        <div class="oval two purple-two"></div>
+        <div class="oval three purple-one"></div>
+        <div class="oval four purple-three"></div>
+        <div class="oval five purple-two"></div>
+        <div class="oval six purple-four"></div>
+        <div class="oval seven purple-four"></div>
+        <div class="oval eight purple-one"></div>
+        <div class="oval nine purple-two"></div>
 
-      <img class="profile-picture" src="../assets/img/about-me@3x.png">
+        <img class="profile-picture" src="../assets/img/about-me@3x.png">
 
-      <div class="title-page"> Who am I? </div>
+        <div class="title-page"> Who am I? </div>
 
-      <div class="description"> I’m a Software Engineer with a growing interest on UI/UX Design from Mexico City. I recently discovered that in this area I can explote all my passions such as designing and drawing.
-        <br> <br>I know that no mather how much time I spend working, I won't get bored because at the end it's all about making art and doing what you love. </div>
+        <div class="description"> I’m a Software Engineer with a growing interest on UI/UX Design from Mexico City. I recently discovered that in this area I can explote all my passions such as designing and drawing.
+          <br> <br>I know that no mather how much time I spend working, I won't get bored because at the end it's all about making art and doing what you love. </div>
 
-      <!-- Passions icons -->
-      <div class="passion-icon-div">
-        <img class="passion-icon" src="../assets/img/flat-icon-sax.png">
-        <img class="passion-icon" src="../assets/img/flat-icon-cinema.png">
-        <img class="passion-icon" src="../assets/img/flat-icon-dog2.png">
-        <img class="passion-icon" src="../assets/img/flat-icon-travel.png">
-        <img class="passion-icon" src="../assets/img/flat-icon-draw.png">
+        <!-- Passions icons -->
+        <div class="passion-icon-div">
+          <img class="passion-icon" src="../assets/img/flat-icon-sax.png">
+          <img class="passion-icon" src="../assets/img/flat-icon-cinema.png">
+          <img class="passion-icon" src="../assets/img/flat-icon-dog2.png">
+          <img class="passion-icon" src="../assets/img/flat-icon-travel.png">
+          <img class="passion-icon" src="../assets/img/flat-icon-draw.png">
+        </div>
+        <a href="https://docs.google.com/document/d/1S1TakiBraD6ywFT-RbG5DzFS3cFNWPZnnKo_x60n--8/export?format=pdf" download>
+          <button class="button-cv">Download CV</button>
+        </a>
       </div>
-      <a href="https://docs.google.com/document/d/1S1TakiBraD6ywFT-RbG5DzFS3cFNWPZnnKo_x60n--8/export?format=pdf" download>
-        <button class="button-cv">Download CV</button>
-      </a>
-      
 
+      <div class="second slider-section">
+        <professionalKnowledge />
+      </div>
+      
       <!-- Slider options -->
       <div class="slider-options">
-        <img class="actual-slider" src="../assets/img/actual-option@3x.png">
+        <div class="option one">
+          <div class="number"> 1 </div>
+          <div class="actual-slider-text"> Who am I? </div>
+        </div>
         
         <hr>
         
-        <a href="#section-aboutme2">
-          <img class="second-slider" src="../assets/img/second-option@3x.png">
-        </a>
+        <div class="option two">
+          <div class="number"> 2 </div>
+          <div class="actual-slider-text"> Professional background </div>
+        </div>
       </div>
-      <div class="slider-text-div">
-        <p class="actual-slider-text"> Who am I? </p>
-        <p class="second-slider-text"> Professional Background </p>
-      </div>
-      
-      
+         
     </div>
   </div>
 </template>
 
 <script>
+import professionalKnowledge from './ProfessionalKnowledgeCard'
+
 export default {
+  components: {
+    professionalKnowledge: professionalKnowledge
+  },
   name: 'AboutMeCard'
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+  .card
+    max-height: calc(100vh - 60px)
+
+  .slider-section
+    display: inline-block
+    height: calc(100vh - 60px)
+    width: 100%
+
   .oval
     border-radius: 50%
     position: absolute
@@ -127,46 +144,39 @@ export default {
     width: 41px
 
   .slider-options
-    display: inline-flex
-    margin-left: 851px
-    margin-top: 113px
-    vertical-align: middle
-  
-  .actual-slider
-    height: 38px
-    width: 38px
-  
-  .second-slider  
-    height: 29px
-    margin-right: 232px
-    margin-top: 10px
-    width: 29px
+    bottom: 96px
+    height: 64px
+    position: absolute
+    right: 164px
+    vertical-align: top
+    width: 360px
 
-  hr
-    border-bottom: none
-    border-top: dotted 5px
-    height: 1px
-    margin-top: 20px
-    width: 180px
-  
-  .slider-text-div 
-    display: flex
-    height: 18px
-    margin-top: 8px
-  
-  .actual-slider-text
-    color: #364252
-    font-family: 'CarosMedium'
-    font-size: 15px
-    margin-left: 831px
-    
-  .second-slider-text
-    color: #364252
-    font-family: 'CarosMedium'
-    font-size: 15px
-    margin-left: 80px
-    margin-right: 164px
+    .option
+      display: inline-block
+      font-size: 15px
 
+      &:first-child
+        margin-right: 82px
+
+      .number
+        background: purple
+        border-radius: 50%
+        color: #FFF
+        height: 29px
+        line-height: 29px
+        margin: 0 auto
+        text-align: center
+        width: 29px
+
+    hr
+      border-bottom: none
+      border-top: dotted 5px
+      left: 55px
+      margin: 0
+      height: 1px
+      position: absolute
+      top: 12px
+      width: 180px
         
   @media screen and (min-width: 1440px)
     .oval
