@@ -13,42 +13,54 @@
       <!-- Title page -->
       <div class="title-page"> Education </div>
       <div class="subtitle-page"> Here, you can find the places where I've learned. </div>
-      
-      <!-- Cards title -->
-      <div class="card-title-div">
-        <div class="card-title"> UI/UX Specialization </div>
-        <div class="card-title"> Exchange Program </div>
-        <div class="card-title"> Bachelor's Degree </div>
-      </div>
 
-      <!-- Cards subtitle --> 
-      <div class="card-subtitle-div">  
-        <a href="https://www.coursera.org/specializations/ui-ux-design" class="card-subtitle" target="_blank"> California Institute of Arts - Coursera </a>
-        <a href="https://www.utc.fr/" class="card-subtitle" target="_blank"> Université de Technologie de Compiègne </a>
-        <a href="http://www.escom.ipn.mx/" class="card-subtitle" target="_blank"> Escuela Superior de Cómputo </a>
-      </div>
       <!-- Cards-->
-      <div class="card-div">
+      <div class="cards">
         <!--CIA card -->
-        <div class="education-card">
-          <img class="image" src="../assets/img/CIA.png">
-          <div class="overlay">
-            <div class="text">Hello World</div>
+        <div class="education-item">
+          <div class="title"> UI/UX Specialization </div>
+          <a href="https://www.coursera.org/specializations/ui-ux-design" class="subtitle" target="_blank"> California Institute of Arts - Coursera </a>
+          
+          <div class="card">
+            <img class="image" src="../assets/img/CIA.png">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
           </div>
+          
+          <div class="date"> 2019 - Present </div>
         </div>
-        
-        
-        <!--UTC card -->
-        <img class="education-card" src="../assets/img/UTC.png">
-        <!--ESCOM card -->
-        <img class="education-card" src="../assets/img/ESCOM.png">
-      </div>
 
-      <!-- Cards date --> 
-      <div class="card-date-div">
-        <div class="card-date"> 2019 - Present </div>
-        <div class="card-date"> 2017 - 2018 </div>
-        <div class="card-date"> 2014 - 2019 </div>
+        <!--UTC card -->
+        <div class="education-item">
+          <div class="title"> Exchange Program </div>
+          <a href="https://www.utc.fr/" class="subtitle" target="_blank"> Université de Technologie de Compiègne </a>
+          
+          <div class="card">
+            <img class="image" src="../assets/img/UTC.png">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+
+          <div class="date"> 2017 - 2018 </div>
+        </div>
+
+        <!--ESCOM card -->
+        <div class="education-item">
+          <div class="title"> Bachelor's Degree </div>
+          <a href="http://www.escom.ipn.mx/" class="subtitle" target="_blank"> Escuela Superior de Cómputo </a>
+          
+          <div class="card">
+            <img class="image" src="../assets/img/ESCOM.png"> 
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+
+          <div class="date"> 2014 - 2019 </div>
+        </div>
+
       </div>
 
     </div>
@@ -63,6 +75,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+  @import "@/variables.sass"
+
   .title-page
     color: #364252
     font-family: 'CarosMedium'
@@ -74,94 +88,85 @@ export default {
     color: #364252
     font-family: 'CarosMedium'
     font-size: 18px
+    margin-bottom: 64px
     margin-left: 67px
     margin-top: 7px
-  
-  .card-title-div
-    display: flex
-    height: 28px
-    margin-left: 65px
-    margin-right: 65px
-    margin-top: 30px
 
-  .card-title
-    color: #364252
-    font-family: 'CarosBold'
-    font-size: 23px
-    margin: 30px
-    text-align: center
-    width: 369px
-  
-  .card-subtitle-div
-    display: flex
-    height: 21px
-    margin-left: 65px
-    margin-right: 65px
-    margin-top: 13px
+  .cards
+    .education-item
+      display: inline-block
+      width: calc(100%/3)
 
-  .card-subtitle
-    color: #b75e5f
-    font-family: 'CarosMedium'
-    font-size: 18px
-    margin: 19px
-    text-align: center
-    text-decoration: none
-    width: 369px
-  
-  .card-date-div
-    display: flex
-    margin-left: 65px
-    margin-right: 65px
-    vertical-align: middle
+      .title
+        color: #364252
+        font-family: 'CarosBold'
+        font-size: 23px
+        text-align: center
+        width: 100%
 
-  .card-date
-    color: #364252
-    font-family: 'CarosLight'
-    font-size: 15px
-    margin: 0 19px 0 19px
-    opacity: 0.65
-    text-align: right
-    width: 369px
+      .subtitle
+        color: #b75e5f
+        display: block
+        font-family: 'CarosMedium'
+        font-size: 18px
+        margin-bottom: 22px
+        text-align: center
+        text-decoration: none
+        width: 100%
+
+      .card
+        border-radius: 4px
+        border-style: hidden
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+        display: inline-block
+        height: 265px
+        margin: 0 17px
+        position: relative
+        width: calc(100% - 34px)
+
+        .image
+          border-radius: 4px
+          display: block
+          height: 274px
+          margin: -4px 0 0 -8px
+          min-width: calc(100% + 8px)
+
+        .overlay 
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          background-color: #008CBA
+          overflow: hidden
+          width: 100%
+          height: 0
+          transition: .5s ease
+
+        &:hover .overlay 
+          height: 100%
+
+      .date
+        color: #364252
+        font-family: 'CarosLight'
+        font-size: 15px
+        margin-right: 17px
+        margin-top: 11px
+        opacity: 0.65
+        text-align: right
+        width: calc(100% - 17px)
 
   .card-div
     margin-left: 65px
     margin-right:65px
     margin-top: 21px
-    
-  .education-card
-    border-radius: 4px
-    border-style: hidden
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
-    height: 265px
-    margin: 17px
-    width: 369px
-    display: inline-block
   
-  .image 
-    display: block
-    width: 100%
-    height: auto
-  
-  .overlay 
-    position: absolute
-    bottom: 0
-    left: 0
-    right: 0
-    background-color: #008CBA
-    overflow: hidden
-    width: 100%
-    height: 0
-    transition: .5s ease
-  
-  .education-card:hover .overlay 
-    height: 100%
   
   .oval
     border-radius: 50%
     position: absolute
 
     &.purple-one
-      background: #843b62
+      background: $purple-one
 
     &.purple-two
       background:  #74546a

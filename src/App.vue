@@ -99,7 +99,7 @@ export default {
       max-width: 1340px
       overflow: hidden
       position: relative
-      width: calc(100vw - 60px)
+      width: calc(100vw - 100px)
 
   @media screen and (min-width: 1440px)
     .card

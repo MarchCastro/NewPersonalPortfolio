@@ -116,6 +116,7 @@ export default {
     display: inline-block
     height: 330px
     margin: 25px
+    vertical-align: top
     width: 261px
     
   .top-card-rectangle

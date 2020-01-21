@@ -27,7 +27,7 @@
         <img class="passion-icon" src="../assets/img/flat-icon-travel.png">
         <img class="passion-icon" src="../assets/img/flat-icon-draw.png">
       </div>
-      <a href="https://docs.google.com/document/d/1S1TakiBraD6ywFT-RbG5DzFS3cFNWPZnnKo_x60n--8/edit?usp=sharing">
+      <a href="https://docs.google.com/document/d/1S1TakiBraD6ywFT-RbG5DzFS3cFNWPZnnKo_x60n--8/export?format=pdf" download>
         <button class="button-cv">Download CV</button>
       </a>
       
@@ -36,7 +36,7 @@
       <div class="slider-options">
         <img class="actual-slider" src="../assets/img/actual-option@3x.png">
         
-        <hr class="hr">
+        <hr>
         
         <a href="#section-aboutme2">
           <img class="second-slider" src="../assets/img/second-option@3x.png">
@@ -142,7 +142,8 @@ export default {
     margin-top: 10px
     width: 29px
 
-  .hr
+  hr
+    border-bottom: none
     border-top: dotted 5px
     height: 1px
     margin-top: 20px
