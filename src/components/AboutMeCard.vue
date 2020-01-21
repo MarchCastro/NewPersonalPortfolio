@@ -1,7 +1,7 @@
 <template>
   <div id="aboutMeCard" class="section">
     <div class="card">
-      <div class="first slider-section">
+      <div class="first slider-section" v-bind:class="{hidden: section === 1}">
         <!-- Picture ovals -->
         <div class="oval one purple-one"></div>
         <div class="oval two purple-two"></div>
@@ -33,20 +33,24 @@
         </a>
       </div>
 
-      <div class="second slider-section">
+      <div class="second slider-section" v-bind:class="{hidden: section === 1}">
         <professionalKnowledge />
       </div>
       
       <!-- Slider options -->
       <div class="slider-options">
-        <div class="option one">
+        <div class="option one"
+             v-on:click="section = 0"
+             v-bind:class="{active: section === 0}">
           <div class="number"> 1 </div>
           <div class="actual-slider-text"> Who am I? </div>
         </div>
         
         <hr>
         
-        <div class="option two">
+        <div class="option two"
+             v-on:click="section = 1"
+             v-bind:class="{active: section === 1}">
           <div class="number"> 2 </div>
           <div class="actual-slider-text"> Professional background </div>
         </div>
@@ -63,6 +67,17 @@ export default {
   components: {
     professionalKnowledge: professionalKnowledge
   },
+  data: function () {
+    return {
+      section: 0
+    }
+  },
+  mounted () {
+    window.onscroll = function(e){
+      // eslint-disable-next-line no-use-before-define
+      // console.log(e) // eslint-disable-line no-use-before-define
+    }
+  },
   name: 'AboutMeCard'
 }
 </script>
@@ -71,11 +86,18 @@ export default {
 <style scoped lang="sass">
   .card
     max-height: calc(100vh - 60px)
+    white-space: nowrap
 
   .slider-section
     display: inline-block
     height: calc(100vh - 60px)
+    transition: all 0.3s
+    transform: translate3d(0, 0, 0)
+    vertical-align: top
     width: 100%
+    
+    &.hidden
+      transform: translate3d( calc(-100vw + 50px), 0, 0)
 
   .oval
     border-radius: 50%
@@ -115,6 +137,7 @@ export default {
     margin-top: 20px
     margin-right: 164px
     text-align: justify
+    white-space: normal
   
   .button-cv
     background-color: #b75e5f
@@ -152,6 +175,7 @@ export default {
     width: 360px
 
     .option
+      cursor: pointer
       display: inline-block
       font-size: 15px
 
@@ -159,14 +183,21 @@ export default {
         margin-right: 82px
 
       .number
-        background: purple
+        background: #805B6F
         border-radius: 50%
         color: #FFF
         height: 29px
         line-height: 29px
         margin: 0 auto
         text-align: center
+        transform: scale3d( 1, 1, 1)
+        transition: all 0.3s
         width: 29px
+
+      &.active
+        .number
+          background: #52354F
+          transform: scale3d(1.3, 1.3, 1)
 
     hr
       border-bottom: none

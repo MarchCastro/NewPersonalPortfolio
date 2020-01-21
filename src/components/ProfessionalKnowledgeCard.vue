@@ -65,21 +65,6 @@
         </div>
       </div>
 
-      <!-- Slider options -->
-      <div class="slider-options">
-        <img class="actual-slider" src="../assets/img/actual-option@3x.png">
-        
-        <hr class="hr">
-        
-        <a href="#section-aboutme2">
-          <img class="second-slider" src="../assets/img/second-option@3x.png">
-        </a>
-      </div>
-      <div class="slider-text-div">
-        <p class="actual-slider-text"> Who am I? </p>
-        <p class="second-slider-text"> Professional Background </p>
-      </div>
-
     </div>
   </div>
 </template>
