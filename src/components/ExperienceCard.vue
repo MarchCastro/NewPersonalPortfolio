@@ -35,48 +35,43 @@
           </div>
         </div>
 
-        <!-- Freelance card -->
+        <!-- Business Analyst card -->
         <div class="card-item">
           <div class="experience-item">
             <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
-              <img class="image" src="../assets/img/CIA.png">
+              <img class="image" src="../assets/img/netlogistik.png">
             </a>
 
-            <div class="title"> Freelance </div>
+            <div class="title"> Business Analyst </div>
             <div class="date"> Jan 2019 - Present </div>
 
-            <div class="content">Recommendation system with indoor location.</div>
+            <div class="content"> Business analysis focused on supply’s chain logistics software. </div>
 
           </div>
           <div class="card">
               <div class="title-card">Activities and tools</div>
-              <div class="content-card"> Adobe XD, Sketch, inVision, Zeplin, Illustrator. </div>
+              <div class="content-card"> Epics, User stories, User's handbooks, SCRUM, Documentation, Client requirements, Activities planning and priorization, Team management. </div>
           </div>
         </div>
 
-        <!-- Freelance card -->
+        <!-- Internship card -->
         <div class="card-item">
           <div class="experience-item">
             <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
-              <img class="image" src="../assets/img/CIA.png">
+              <img class="image" src="../assets/img/imp.png">
             </a>
 
-            <div class="title"> Freelance </div>
-            <div class="date"> Jan 2019 - Present </div>
+            <div class="title"> Internship </div>
+            <div class="date"> Feb 2018 - Aug 2018 </div>
 
-            <div class="content">Recommendation system with indoor location.</div>
+            <div class="content">Processes simulation system for the National Refination System plants of PEMEX to certificate plant operators.</div>
 
           </div>
           <div class="card">
               <div class="title-card">Activities and tools</div>
-              <div class="content-card"> Adobe XD, Sketch, inVision, Zeplin, Illustrator. </div>
+              <div class="content-card"> HMIWeb Display Builder by Honeywell, User Interfaces Design, C#, Project documentation.   </div>
           </div>
         </div>
-
-          
-        
-        
-
 
       </div>
 
@@ -116,7 +111,11 @@ export default {
     .card-item
       display: inline-block
       height: 395px
+      margin-right: 60px
       width: calc(100%/3)
+
+      &:last-child
+        margin-right: 0
 
     .experience-item
       border: 1.5px solid rgba(63.05%, 26.76%, 11.01%, 0.75)

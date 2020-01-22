@@ -64,7 +64,6 @@
           <p class="content-card"> MySQL/Oracle PLSQL </p>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -185,7 +184,7 @@ export default {
     font-size: 15px
     margin-left: 80px
     margin-right: 164px
-
+  
 
   @media screen and (min-width: 1440px)
     
