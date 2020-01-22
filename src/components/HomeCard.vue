@@ -70,6 +70,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+  @import "@/variables.sass"
+  
   .oval
     border-radius: 50%
     position: absolute
@@ -99,16 +101,16 @@ export default {
     &.twelve
 
     &.purple-one
-      background: #843b62
+      background: $purple-one
 
     &.purple-two
-      background:  #74546a
+      background: $purple-two
 
     &.purple-three
-      background: #6d435a
+      background: $purple-three
 
     &.purple-four
-      background: #352d39
+      background: $purple-four
   
   .name
     color: #b75e5f

@@ -72,18 +72,14 @@ export default {
       section: 0
     }
   },
-  mounted () {
-    window.onscroll = function(e){
-      // eslint-disable-next-line no-use-before-define
-      // console.log(e) // eslint-disable-line no-use-before-define
-    }
-  },
   name: 'AboutMeCard'
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+  @import "@/variables.sass"
+
   .card
     max-height: calc(100vh - 60px)
     white-space: nowrap
@@ -104,16 +100,16 @@ export default {
     position: absolute
 
     &.purple-one
-      background: #843b62
+      background: $purple-one
 
     &.purple-two
-      background:  #74546a
+      background: $purple-two
 
     &.purple-three
-      background: #6d435a
+      background: $purple-three
 
     &.purple-four
-      background: #352d39
+      background: $purple-four
 
   .profile-picture
     height: 192px
@@ -189,6 +185,7 @@ export default {
         height: 29px
         line-height: 29px
         margin: 0 auto
+        margin-bottom: 8px
         text-align: center
         transform: scale3d( 1, 1, 1)
         transition: all 0.3s

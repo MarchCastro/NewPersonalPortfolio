@@ -24,7 +24,7 @@
           <div class="card">
             <img class="image" src="../assets/img/CIA.png">
             <div class="overlay">
-              <div class="text">Hello World</div>
+              <a href="www.facebook.com" target="_blank" class="text-overlay"> Visual Elements of User Interface Design </a>
             </div>
           </div>
           
@@ -39,7 +39,7 @@
           <div class="card">
             <img class="image" src="../assets/img/UTC.png">
             <div class="overlay">
-              <div class="text">Hello World</div>
+              <a href="www.facebook.com" target="_blank" class="text-overlay"> Informatic Engineering </a>
             </div>
           </div>
 
@@ -54,7 +54,7 @@
           <div class="card">
             <img class="image" src="../assets/img/ESCOM.png"> 
             <div class="overlay">
-              <div class="text">Hello World</div>
+              <a href="www.facebook.com" target="_blank" class="text-overlay"> Computing Systems Engineering </a>
             </div>
           </div>
 
@@ -93,6 +93,9 @@ export default {
     margin-top: 7px
 
   .cards
+    margin: 30px 67px 0 67px
+    width: calc(100% - 134px)
+
     .education-item
       display: inline-block
       width: calc(100%/3)
@@ -129,21 +132,30 @@ export default {
           display: block
           height: 274px
           margin: -4px 0 0 -8px
-          min-width: calc(100% + 8px)
+          min-width: calc(100% + 16px)
 
         .overlay 
-          position: absolute
+          background-color: #414141
           bottom: 0
-          left: 0
-          right: 0
-          background-color: #008CBA
-          overflow: hidden
-          width: 100%
           height: 0
+          left: 0
+          opacity: 0.86
+          overflow: hidden
+          position: absolute
+          right: 0
           transition: .5s ease
+          width: 100%
 
+          .text-overlay 
+            color: #fff
+            font-family: 'CarosLight'
+            font-size: 14px
+            margin: 18px
+            text-decoration: none
+            position: absolute
+        
         &:hover .overlay 
-          height: 100%
+          height: 30%
 
       .date
         color: #364252
@@ -169,13 +181,13 @@ export default {
       background: $purple-one
 
     &.purple-two
-      background:  #74546a
+      background: $purple-two
 
     &.purple-three
-      background: #6d435a
+      background: $purple-three
 
     &.purple-four
-      background: #352d39
+      background: $purple-four
 
   @media screen and (min-width: 1440px)
     .oval

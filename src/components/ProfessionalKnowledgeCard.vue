@@ -82,7 +82,7 @@ export default {
     font-family: 'CarosMedium'
     font-size: 40px
     margin-left: 67px
-    margin-top: 90px
+    margin-top: 70px
   
   .subtitle-page
     color: #364252
@@ -92,7 +92,7 @@ export default {
     margin-top: 7px
   
   .card-div
-    margin: 43px 67px 0 67px
+    margin: 30px 67px 0 67px
     width: calc(100% - 134px)
     
     .skill-card
