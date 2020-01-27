@@ -20,10 +20,10 @@
         <div class="card-item">
           <div class="experience-item">
             <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
-              <img class="image" src="../assets/img/CIA.png">
+              <div class="image" style="backgroundImage:url('img/CIA.png')"></div>
             </a>
 
-            <div class="title"> Freelance </div>
+            <div class="title"> Freelancer </div>
             <div class="date"> Jan 2019 - Present </div>
 
             <div class="content">Recommendation system with indoor location.</div>
@@ -39,7 +39,7 @@
         <div class="card-item">
           <div class="experience-item">
             <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
-              <img class="image" src="../assets/img/netlogistik.png">
+              <div class="image" style="backgroundImage:url('img/netlogistik.png')"></div>
             </a>
 
             <div class="title"> Business Analyst </div>
@@ -58,7 +58,7 @@
         <div class="card-item">
           <div class="experience-item">
             <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
-              <img class="image" src="../assets/img/imp.png">
+              <div class="image" style="backgroundImage:url('img/imp.png')"></div>
             </a>
 
             <div class="title"> Internship </div>
@@ -112,7 +112,7 @@ export default {
       display: inline-block
       height: 395px
       margin-right: 60px
-      width: calc(100%/3)
+      width: calc(100%/3 - 40px)
 
       &:last-child
         margin-right: 0
@@ -124,12 +124,13 @@ export default {
       height: 268px
 
       .image
-        border-radius: 4px
-        display: inline
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
         height: 84px
-        margin: 20px 80px 30px 80px
+        margin: 20px 0 30px 0
         vertical-align: middle
-        width: calc(100% - 230px)
+        width: 100%
 
       .title
         color: #364252
@@ -151,10 +152,11 @@ export default {
       .content
         color: #364252
         font-family: 'CarosLight'
-        font-size: 16px
+        font-size: 15px
         margin-bottom: 22px
+        padding: 0 37px
         text-align: center
-        width: 100%
+        width: calc(100% - 74px)
 
     .card
       background-color: #b75e5f
@@ -172,7 +174,7 @@ export default {
         color: #fff
         font-family: 'CarosMedium'
         font-size: 15px
-        margin-top: 22px
+        margin-top: 18px
         text-align: center
         width: 100%
       
@@ -181,10 +183,9 @@ export default {
         font-family: 'CarosLight'
         font-size: 13px
         margin-top: 10px
-        text-align: center
-        width: 100%
-
-        
+        padding: 0 37px
+        text-align: justify
+        width: calc(100% - 74px)
   
   .oval
     border-radius: 50%

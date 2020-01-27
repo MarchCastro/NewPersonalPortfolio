@@ -86,7 +86,7 @@ export default {
   
   .subtitle-page
     color: #364252
-    font-family: 'CarosMedium'
+    font-family: 'CarosLight'
     font-size: 18px
     margin-bottom: 64px
     margin-left: 67px
@@ -103,7 +103,7 @@ export default {
       .title
         color: #364252
         font-family: 'CarosBold'
-        font-size: 23px
+        font-size: 18px
         text-align: center
         width: 100%
 
@@ -111,7 +111,7 @@ export default {
         color: #b75e5f
         display: block
         font-family: 'CarosMedium'
-        font-size: 18px
+        font-size: 16px
         margin-bottom: 22px
         text-align: center
         text-decoration: none

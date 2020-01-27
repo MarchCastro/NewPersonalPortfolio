@@ -15,13 +15,13 @@
 
       <!-- Cards-->
       <div class="cards"> 
-        <div class="portfolio-item">
+        <div class="portfolio-item" v-on:click="openModal('portfolio')">
           Hola
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item" v-on:click="openModal('portfolio')">
           Hola
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item" v-on:click="openModal('portfolio')">
           Hola
         </div>
       </div>
@@ -30,7 +30,15 @@
 </template>
 
 <script>
+import router from '../router'
+
 export default {
+  methods: {
+    openModal (modal) {
+      router.push({ path: '', query: { modal: modal } })
+      // this.$route = {modal: true, current: modal}
+    }
+  },
   name: 'portfolioCard'
 }
 </script>

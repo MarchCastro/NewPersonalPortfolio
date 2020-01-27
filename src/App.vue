@@ -32,6 +32,14 @@
     <PortfolioCard/>
     <ExperienceCard/>
     <EducationCard/>
+
+    <portfolioModal :active="modal.active && modal.current === 'portfolio'"/>
+    // other modals
+
+    <div id="modalOverlay"
+         v-bind:class="{active: query.modal !== undefined}"
+         v-on:click="closeModal()"></div>
+
   </div>
 </template>
 
@@ -43,6 +51,10 @@ import PortfolioCard from './components/PortfolioCard.vue'
 import ExperienceCard from './components/ExperienceCard.vue'
 import EducationCard from './components/EducationCard.vue'
 
+import portfolioModal from './components/portfolioModal.vue'
+
+import router from './router'
+
 export default {
   name: 'app',
   components: {
@@ -51,7 +63,30 @@ export default {
     //ProfessionalBackgroundCard,
     PortfolioCard,
     ExperienceCard,
-    EducationCard
+    EducationCard,
+    portfolioModal
+  },
+  computed: {
+    query () {
+      return this.$route.query
+    }
+  },
+  data: function () {
+    return {
+      modal: {
+        active: true,
+        current: 'portfolio'
+      }
+    }
+  },
+  methods: {
+    closeModal () {
+      router.push({ path: '', query: {} })
+    },
+    openModal (modal) {
+      router.push({ path: '', query: { modal: modal } })
+      // this.$route = {modal: true, current: modal}
+    }
   }
 }
 </script>
@@ -100,6 +135,22 @@ export default {
       overflow: hidden
       position: relative
       width: calc(100vw - 100px)
+
+  #modalOverlay
+    background: #000
+    height: 100vh
+    left: 0
+    opacity: 0
+    pointer-events: none
+    position: fixed
+    top: 0
+    transition: all 0.3s
+    width: 100vw
+    z-index: 9
+
+    &.active
+      opacity: 0.9
+      pointer-events: all
 
   @media screen and (min-width: 1440px)
     .card
