@@ -132,7 +132,7 @@ export default {
       border-radius: 32px
       height: calc(100vh - 60px)
       max-width: 1340px
-      overflow: hidden
+      overflow-y: scroll
       position: relative
       width: calc(100vw - 100px)
 

@@ -42,60 +42,114 @@
       </div>
 
       <!-- <div class="subtitle-section"> App mockups </div> -->
-        <div class="cards"> 
-          
-          <!-- Sapphire app -->
-          <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
-            <img class="mobile-image" src="../assets/img/Sapphire_1.png">
-            <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
-            </div>
+      <div class="cards"> 
+        
+        <!-- Sapphire app -->
+        <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
+          <img class="mobile-image" src="../assets/img/Sapphire_1.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
           </div>
-          
-          <!-- Demente app -->
-          <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
-            <img class="mobile-image" src="../assets/img/Demente_1.png">
-            <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
-            </div>
+        </div>
+        
+        <!-- Demente app -->
+        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
+          <img class="mobile-image" src="../assets/img/Demente_1.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
           </div>
-          
-          <!-- Heartbeat app -->
-          <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
-            <img class="mobile-image" src="../assets/img/Heartbeat_1.png">
-            <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
-            </div>
+        </div>
+        
+        <!-- Heartbeat app -->
+        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
+          <img class="mobile-image" src="../assets/img/Heartbeat_1.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- <div class="subtitle-section"> Wireframes and sketches </div> -->
+      <div class="cards"> 
+        
+        <!-- Wireframe Virgin Galactic -->
+        <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/Wireframe_VG.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
+        </div>
+        
+        <!-- UserFlow Virgin Galactic -->
+        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/UserFlow_VG.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
+        </div>
+        
+        <!-- TaskFlow Virgin Galactic -->
+        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/TaskFlow_VG.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
         </div>
       </div>
 
-      <!-- <div class="subtitle-section"> Wireframes and sketches </div> -->
-        <div class="cards"> 
-          
-          <!-- Sapphire app -->
-          <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
-            <img class="mobile-image" src="../assets/img/Sapphire_1.png">
-            <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
-            </div>
+      <div class="cards">  
+        <!-- Dog App Sitemap -->
+        <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/Sitemap_1.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
           </div>
-          
-          <!-- Demente app -->
-          <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
-            <img class="mobile-image" src="../assets/img/Demente_1.png">
-            <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
-            </div>
+        </div>
+        
+        <!-- Dog Door Interaction Map -->
+        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/DoggieDoor_InteractionMap.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
           </div>
-          
-          <!-- Heartbeat app -->
-          <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
-            <img class="mobile-image" src="../assets/img/Heartbeat_1.png">
-            <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
-            </div>
+        </div>
+
+        <!-- Shoe Store Content map -->
+        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/ShoeStore_ContentMap.png">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
         </div>
       </div>
+
+      <div class="cards">  
+        <!-- Dog App Sketch -->
+        <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/Sketch_3.jpeg">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
+        </div>
+        
+        <!-- Virgin Galactic Sketc -->
+        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/Sketch_1.jpeg">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
+        </div>
+
+        <!-- Shoe Store Content map -->
+        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
+          <img class="image" src="../assets/img/Sketch_2.jpeg">
+          <div class="overlay">
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -140,8 +194,8 @@ export default {
     margin-top: 38px
 
   .cards
-    margin: 15px 67px 0 67px
-    width: calc(100% - 134px)
+    margin: 15px 80px 0 80px
+    width: calc(100% - 160px)
 
     .portfolio-item
       border-radius: 8px
@@ -165,14 +219,12 @@ export default {
         background: $soft-purple
       
       .image
-          border-radius: 4px
           display: block
           height: 207px
           margin: 20px 20px
           min-width: calc(100% - 40px)
       
       .mobile-image
-          border-radius: 4px
           display: block
           height: 207px
           margin: 20px 90px
