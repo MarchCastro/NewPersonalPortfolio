@@ -20,7 +20,7 @@
         <div class="card-item">
           <div class="experience-item">
             <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
-              <div class="image" style="backgroundImage:url('img/CIA.png')"></div>
+              <div class="image" style="backgroundImage:url('img/Freelance.png')"></div>
             </a>
 
             <div class="title"> Freelancer </div>
@@ -102,15 +102,16 @@ export default {
     font-size: 18px
     margin-bottom: 64px
     margin-left: 67px
-    margin-top: 7px
 
   .cards
     margin: 30px 67px 0 67px
     width: calc(100% - 134px)
 
     .card-item
+      border-radius: 8px
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
       display: inline-block
-      height: 395px
+      height: 426px
       margin-right: 60px
       width: calc(100%/3 - 40px)
 
@@ -118,16 +119,17 @@ export default {
         margin-right: 0
 
     .experience-item
-      border: 1.5px solid rgba(63.05%, 26.76%, 11.01%, 0.75)
       border-top-left-radius: 8px
       border-top-right-radius: 8px
-      height: 268px
+      height: 279px
+      position: relative
+      z-index: 1
 
       .image
         background-position: center
         background-repeat: no-repeat
         background-size: contain
-        height: 84px
+        height: 75px
         margin: 20px 0 30px 0
         vertical-align: middle
         width: 100%
@@ -165,10 +167,14 @@ export default {
       border-top-left-radius: 0
       border-top-right-radius: 0
       border-style: hidden
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
       height: 127px
       margin:0
       opacity: 0.75
+      position: relative
       width: 100%
+      z-index: 0
+      
 
       .title-card
         color: #fff

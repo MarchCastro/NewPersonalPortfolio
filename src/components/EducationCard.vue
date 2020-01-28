@@ -86,11 +86,11 @@ export default {
   
   .subtitle-page
     color: #364252
-    font-family: 'CarosLight'
+    font-family: 'CarosMedium'
     font-size: 18px
     margin-bottom: 64px
     margin-left: 67px
-    margin-top: 7px
+    
 
   .cards
     margin: 30px 67px 0 67px
