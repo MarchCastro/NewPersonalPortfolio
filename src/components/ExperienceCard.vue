@@ -19,26 +19,28 @@
         <!-- Freelance card -->
         <div class="card-item">
           <div class="experience-item">
-            <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
-              <div class="image" style="backgroundImage:url('img/Freelance.png')"></div>
-            </a>
+            <div class="image" style="backgroundImage:url('img/Freelance.png')"></div>
 
             <div class="title"> Freelancer </div>
             <div class="date"> Jan 2019 - Present </div>
 
             <div class="content">Recommendation system with indoor location.</div>
 
+            <img class="arrow" src="../assets/img/arrow_experience.png">
+
+            <div class="bottom-card-rectangle"></div>
+          
           </div>
-          <div class="card">
+          <!--<div class="card">
               <div class="title-card">Activities and tools</div>
               <div class="content-card"> Adobe XD, Sketch, inVision, Zeplin, Illustrator. </div>
-          </div>
+          </div>-->
         </div>
 
         <!-- Business Analyst card -->
         <div class="card-item">
           <div class="experience-item">
-            <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
+            <a href="https://www.netlogistik.com/es/" target="_blank"> 
               <div class="image" style="backgroundImage:url('img/netlogistik.png')"></div>
             </a>
 
@@ -47,17 +49,21 @@
 
             <div class="content"> Business analysis focused on supply’s chain logistics software. </div>
 
+            <img class="arrow" src="../assets/img/arrow_experience.png">
+
+            <div class="bottom-card-rectangle"></div>
+
           </div>
-          <div class="card">
+          <!-- <div class="card">
               <div class="title-card">Activities and tools</div>
               <div class="content-card"> Epics, User stories, User's handbooks, SCRUM, Documentation, Client requirements, Activities planning and priorization, Team management. </div>
-          </div>
+          </div>-->
         </div>
 
         <!-- Internship card -->
         <div class="card-item">
           <div class="experience-item">
-            <a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"> 
+            <a href="https://www.gob.mx/imp" target="_blank"> 
               <div class="image" style="backgroundImage:url('img/imp.png')"></div>
             </a>
 
@@ -66,11 +72,14 @@
 
             <div class="content">Processes simulation system for the National Refination System plants of PEMEX to certificate plant operators.</div>
 
+            <img class="arrow" src="../assets/img/arrow_experience.png">
+
+            <div class="bottom-card-rectangle"></div>
           </div>
-          <div class="card">
+          <!--<div class="card">
               <div class="title-card">Activities and tools</div>
               <div class="content-card"> HMIWeb Display Builder by Honeywell, User Interfaces Design, C#, Project documentation.   </div>
-          </div>
+          </div>-->
         </div>
 
       </div>
@@ -104,14 +113,14 @@ export default {
     margin-left: 67px
 
   .cards
-    margin: 30px 67px 0 67px
-    width: calc(100% - 134px)
+    margin: 30px 80px 0 80px
+    width: calc(100% - 160px)
 
     .card-item
       border-radius: 8px
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
       display: inline-block
-      height: 426px
+      height: 342px
       margin-right: 60px
       width: calc(100%/3 - 40px)
 
@@ -119,8 +128,6 @@ export default {
         margin-right: 0
 
     .experience-item
-      border-top-left-radius: 8px
-      border-top-right-radius: 8px
       height: 279px
       position: relative
       z-index: 1
@@ -130,7 +137,7 @@ export default {
         background-repeat: no-repeat
         background-size: contain
         height: 75px
-        margin: 20px 0 30px 0
+        margin: 30px 0 30px 0
         vertical-align: middle
         width: 100%
 
@@ -146,7 +153,7 @@ export default {
         font-family: 'CarosLight'
         font-size: 13px
         margin-top: 5px
-        margin-bottom: 15px
+        margin-bottom: 25px
         opacity: 0.65
         text-align: center
         width: 100%
@@ -155,10 +162,24 @@ export default {
         color: #364252
         font-family: 'CarosLight'
         font-size: 15px
-        margin-bottom: 22px
+        margin-bottom: 25px
         padding: 0 37px
         text-align: center
         width: calc(100% - 74px)
+      
+      .arrow
+        height: 13px
+        margin: 0 160px 23px 160px
+        width: calc(100% - 330px)
+      
+      .bottom-card-rectangle
+        background-color: #b75e5f
+        border-bottom-left-radius: 8px
+        border-bottom-right-radius: 8px
+        height: 10px
+        width: 100%
+        opacity: 0.75
+
 
     .card
       background-color: #b75e5f

@@ -2,35 +2,37 @@
   <div id="app">
     <ul id="nav">
       <li>
-        <a href="#homeCard"> home </a>
+        <a class="option" href="#homeCard"> Home </a>
       </li>
   
       <li>
-        <a href="#aboutMeCard"> about </a>
+        <a class="option" href="#aboutMeCard"> About me </a>
+      </li>
+    <!--
+      <li>
+        <a class="option" href="#professionalBackgroundCard"> about 2</a>
+      </li>
+    -->
+
+      <li>
+        <a class="option" href="#portfolioCard"> Portfolio </a>
       </li>
 
       <li>
-        <a href="#professionalBackgroundCard"> about 2</a>
+        <a class="option" href="#experienceCard"> Experience </a>
       </li>
 
       <li>
-        <a href="#portfolioCard"> portfolio </a>
-      </li>
-
-      <li>
-        <a href="#experienceCard"> experience </a>
-      </li>
-
-      <li>
-        <a href="#educationCard"> education </a>
+        <a class="option" href="#educationCard"> Education </a>
       </li>
     </ul>
 
     <HomeCard/>
     <AboutMeCard/>
     <ProfessionalBackgroundCard/>
-    <PortfolioCard/>
+    
     <ExperienceCard/>
+    <PortfolioCard/>
     <EducationCard/>
 
     <portfolioModal :active="modal.active && modal.current === 'portfolio'"/>
@@ -109,9 +111,24 @@ export default {
     src: url('assets/fonts/CarosMedium.otf')
 
   #nav
-    background: orange
+    background: #b75e5f
+    border-top-right-radius: 14px
+    border-bottom-right-radius: 14px
+    height: 455px
+    left: 1
+    margin-top: 180px
     position: fixed
-    right: 0
+    width: 70px
+    z-index: 1
+
+    .option
+      color: #fff
+      font-family: 'CarosLight'
+      font-size: 10px
+      text-decoration: none
+    
+    li 
+      list-style-type: none
 
   #app
     background-color: #321f37
@@ -132,7 +149,7 @@ export default {
       border-radius: 32px
       height: calc(100vh - 60px)
       max-width: 1340px
-      overflow-y: scroll
+      overflow: hidden
       position: relative
       width: calc(100vw - 100px)
 
