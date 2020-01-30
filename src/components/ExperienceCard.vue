@@ -122,6 +122,8 @@ export default {
       display: inline-block
       height: 342px
       margin-right: 60px
+      position: relative
+      vertical-align: top 
       width: calc(100%/3 - 40px)
 
       &:last-child
@@ -129,7 +131,6 @@ export default {
 
     .experience-item
       height: 279px
-      position: relative
       z-index: 1
 
       .image
@@ -168,18 +169,21 @@ export default {
         width: calc(100% - 74px)
       
       .arrow
+        bottom: 35px
         height: 13px
-        margin: 0 160px 23px 160px
-        width: calc(100% - 330px)
+        margin: 0 calc(50% - 12px)
+        position: absolute
+        width: 28px
       
       .bottom-card-rectangle
         background-color: #b75e5f
+        bottom: 0
         border-bottom-left-radius: 8px
         border-bottom-right-radius: 8px
         height: 10px
-        width: 100%
         opacity: 0.75
-
+        position: absolute
+        width: 100%
 
     .card
       background-color: #b75e5f

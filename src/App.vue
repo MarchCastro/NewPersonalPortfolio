@@ -2,6 +2,12 @@
   <div id="app">
     <ul id="nav">
       <li>
+        
+        <div class="option-icon" style="backgroundImage:url('img/netlogistik.png')"></div>
+        <a class="option" href="#homeCard"> Menu </a>
+      </li>
+
+      <li>
         <a class="option" href="#homeCard"> Home </a>
       </li>
   
@@ -13,13 +19,12 @@
         <a class="option" href="#professionalBackgroundCard"> about 2</a>
       </li>
     -->
-
       <li>
-        <a class="option" href="#portfolioCard"> Portfolio </a>
+        <a class="option" href="#experienceCard"> Experience </a>
       </li>
 
       <li>
-        <a class="option" href="#experienceCard"> Experience </a>
+        <a class="option" href="#portfolioCard"> Portfolio </a>
       </li>
 
       <li>
@@ -30,7 +35,6 @@
     <HomeCard/>
     <AboutMeCard/>
     <ProfessionalBackgroundCard/>
-    
     <ExperienceCard/>
     <PortfolioCard/>
     <EducationCard/>
@@ -117,18 +121,27 @@ export default {
     height: 455px
     left: 1
     margin-top: 180px
+    padding: 0
     position: fixed
-    width: 70px
+    text-align: center
+    width: 100px
     z-index: 1
+
+    .option-icon
+      height: 22px
+      margin-top: 23px
+      width: 15px
 
     .option
       color: #fff
       font-family: 'CarosLight'
       font-size: 10px
       text-decoration: none
+      
     
     li 
       list-style-type: none
+      margin-bottom: 45px
 
   #app
     background-color: #321f37
