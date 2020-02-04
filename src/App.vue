@@ -2,32 +2,46 @@
   <div id="app">
     <ul id="nav">
       <li>
-        <div class="option-icon" style="backgroundImage:url('/img/netlogistik.png')"></div>
-        <a class="option" href="#homeCard"> Menu </a>
+        <a href="#homeCard">
+          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Menu_option.svg')"></div>
+          <div class="option"> Menu </div>
+        </a>
       </li>
 
       <li>
-        <a class="option" href="#homeCard"> Home </a>
+        <a href="#homeCard">
+          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Home_option.svg')"></div>
+          <!--<div class="option-icon" style="backgroundImage:url('/img/menu-img/Home_option_hover.svg')"></div>-->
+          <div class="option"> Home </div>
+        </a>
       </li>
   
       <li>
-        <a class="option" href="#aboutMeCard"> About me </a>
-      </li>
-    <!--
-      <li>
-        <a class="option" href="#professionalBackgroundCard"> about 2</a>
-      </li>
-    -->
-      <li>
-        <a class="option" href="#experienceCard"> Experience </a>
+        <a href="#aboutMeCard">
+          <div class="option-icon" style="backgroundImage:url('/img/menu-img/About_menu_option.svg')"></div>
+          <div class="option"> About me </div>
+        </a>
       </li>
 
       <li>
-        <a class="option" href="#portfolioCard"> Portfolio </a>
+        <a href="#experienceCard">
+          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Experience_option.svg')"></div>
+          <div class="option"> Experience </div>
+        </a>
       </li>
 
       <li>
-        <a class="option" href="#educationCard"> Education </a>
+        <a href="#portfolioCard">
+          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Portfolio_option.svg')"></div>
+          <div class="option"> Portfolio </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#educationCard">
+          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Education_option.svg')"></div>
+          <div class="option"> Education </div>
+        </a>
       </li>
     </ul>
 
@@ -130,20 +144,26 @@ export default {
       background-position: center
       background-repeat: no-repeat
       background-size: contain
+      cursor: pointer
       height: 22px
       margin-top: 23px
       width: 100%
 
-    .option
+    .option 
       color: #fff
       font-family: 'CarosLight'
       font-size: 10px
       text-decoration: none
-      
+    
+    a 
+      text-decoration: none
     
     li 
       list-style-type: none
-      margin-bottom: 45px
+      margin-bottom: 36px
+    
+    .option:hover
+      color: #352d39
 
   #app
     background-color: #321f37
@@ -167,6 +187,7 @@ export default {
       overflow: hidden
       position: relative
       width: calc(100vw - 100px)
+
 
   #modalOverlay
     background: #000

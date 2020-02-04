@@ -19,7 +19,7 @@
         <!-- Freelance card -->
         <div class="card-item" v-bind:class="{'open': cards.first.open}">
           <div class="experience-item">
-            <div class="image" style="backgroundImage:url('img/Freelance.png')"></div>
+            <div class="image" style="backgroundImage:url('img/experience-img/Freelance.png')"></div>
 
             <div class="title"> Freelancer </div>
             <div class="date"> Jan 2019 - Present </div>
@@ -38,10 +38,10 @@
         </div>
 
         <!-- Business Analyst card -->
-        <div class="card-item">
+        <div class="card-item" v-bind:class="{'open': cards.second.open}">
           <div class="experience-item">
             <a href="https://www.netlogistik.com/es/" target="_blank"> 
-              <div class="image" style="backgroundImage:url('img/netlogistik.png')"></div>
+              <div class="image" style="backgroundImage:url('img/experience-img/netlogistik.png')"></div>
             </a>
 
             <div class="title"> Business Analyst </div>
@@ -49,22 +49,22 @@
 
             <div class="content"> Business analysis focused on supply’s chain logistics software. </div>
 
-            <img class="arrow" src="../assets/img/arrow_experience.png">
-
-            <div class="bottom-card-rectangle"></div>
-
+            <img class="arrow" v-on:click="cards.second.open = !cards.second.open" src="../assets/img/arrow_experience.png">
+            
           </div>
-          <!-- <div class="card">
-              <div class="title-card">Activities and tools</div>
-              <div class="content-card"> Epics, User stories, User's handbooks, SCRUM, Documentation, Client requirements, Activities planning and priorization, Team management. </div>
-          </div>-->
+        
+          <div class="card">
+            <div class="title-card">Activities and tools</div>
+            <div class="content-card"> Epics, User stories, User's handbooks, SCRUM, Documentation, Client requirements, Activities planning and priorization, Team management.  </div>
+            <div class="bottom-card-rectangle"></div>
+          </div>
         </div>
 
         <!-- Internship card -->
-        <div class="card-item">
+        <div class="card-item" v-bind:class="{'open': cards.third.open}">
           <div class="experience-item">
             <a href="https://www.gob.mx/imp" target="_blank"> 
-              <div class="image" style="backgroundImage:url('img/imp.png')"></div>
+              <div class="image" style="backgroundImage:url('img/experience-img/imp.png')"></div>
             </a>
 
             <div class="title"> Internship </div>
@@ -72,14 +72,16 @@
 
             <div class="content">Processes simulation system for the National Refination System plants of PEMEX to certificate plant operators.</div>
 
-            <img class="arrow" src="../assets/img/arrow_experience.png">
+            <img class="arrow" v-on:click="cards.third.open = !cards.third.open" src="../assets/img/arrow_experience.png">
 
             <div class="bottom-card-rectangle"></div>
           </div>
-          <!--<div class="card">
-              <div class="title-card">Activities and tools</div>
-              <div class="content-card"> HMIWeb Display Builder by Honeywell, User Interfaces Design, C#, Project documentation.   </div>
-          </div>-->
+
+          <div class="card">
+            <div class="title-card">Activities and tools</div>
+            <div class="content-card"> HMIWeb Display Builder by Honeywell, User Interfaces Design, C#, Project documentation. </div>
+            <div class="bottom-card-rectangle"></div>
+          </div>
         </div>
 
       </div>
@@ -204,7 +206,7 @@ export default {
         border-top-right-radius: 0
         border-style: hidden
         bottom: 0
-        height: 127px
+        height: 135px
         margin: 0
         position: absolute
         width: 100%
@@ -236,7 +238,7 @@ export default {
           width: 100%
     
       &.open
-        height: 450px
+        height: 460px
         img.arrow
           transform: rotate3d(0, 0, 1, 180deg)
     

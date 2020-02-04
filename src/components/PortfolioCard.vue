@@ -20,7 +20,7 @@
         <div class="portfolio-item green-card">
           <img class="image" src="../assets/img/Actual_portfolio.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Personal Portfolio </a>
           </div>
         </div>
 
@@ -36,7 +36,7 @@
         <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/Library_practice.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Library Practice </a>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
         <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
           <img class="mobile-image" src="../assets/img/Sapphire_1.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Sapphire Project</a>
           </div>
         </div>
         
@@ -56,7 +56,7 @@
         <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
           <img class="mobile-image" src="../assets/img/Demente_1.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> DEMENTE Project </a>
           </div>
         </div>
         
@@ -64,7 +64,7 @@
         <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
           <img class="mobile-image" src="../assets/img/Heartbeat_1.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Hearbeat Monitor Practice <br> UI/UX Especialization</a>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
         <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/Wireframe_VG.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Wireframes <br> Virgin Galactic's Challenge </a>
           </div>
         </div>
         
@@ -90,7 +90,7 @@
         <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
           <div class="image" style="backgroundImage: url('/img/UserFlow_VG.png')"></div>
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> User Flow <br> Virgin Galactic's Challenge </a>
           </div>
         </div>
         
@@ -98,7 +98,7 @@
         <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/TaskFlow_VG.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Task Flow <br> Virgin Galactic's Challenge </a>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@
         <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/Sitemap_1.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Rescue Animal App <br> Personal Project </a>
           </div>
         </div>
         
@@ -116,7 +116,7 @@
         <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/DoggieDoor_InteractionMap.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Interaction Map <br> UI/UX Especialization </a>
           </div>
         </div>
 
@@ -124,7 +124,7 @@
         <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/ShoeStore_ContentMap.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Content Map <br> UI/UX Especialization </a>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
         <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/Sketch_3.jpeg">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Sketch Rescue Animal App <br> Personal Project </a>
           </div>
         </div>
         
@@ -142,7 +142,7 @@
         <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/Sketch_1.jpeg">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Sketch Re-design VG Website <br> Virgin Galactic's Challenge  </a>
           </div>
         </div>
 
@@ -150,7 +150,7 @@
         <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/Sketch_2.jpeg">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Sketch Cinema Messages Website <br> Practice </a>
           </div>
         </div>
       </div>
@@ -263,6 +263,7 @@ export default {
   
       .overlay 
         background-color: #414141
+        border-radius: 8px
         bottom: 0
         height: 0
         left: 0
@@ -275,9 +276,10 @@ export default {
 
         .text-overlay 
           color: #fff
-          font-family: 'CarosLight'
-          font-size: 14px
-          margin: 18px
+          font-family: 'CarosMedium'
+          font-size: 16px
+          margin-left: 20px
+          margin-top: 190px
           text-decoration: none
           position: absolute
       
