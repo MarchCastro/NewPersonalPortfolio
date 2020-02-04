@@ -2,8 +2,7 @@
   <div id="app">
     <ul id="nav">
       <li>
-        
-        <div class="option-icon" style="backgroundImage:url('img/netlogistik.png')"></div>
+        <div class="option-icon" style="backgroundImage:url('/img/netlogistik.png')"></div>
         <a class="option" href="#homeCard"> Menu </a>
       </li>
 
@@ -40,7 +39,7 @@
     <EducationCard/>
 
     <portfolioModal :active="modal.active && modal.current === 'portfolio'"/>
-    // other modals
+    <!-- other modals -->
 
     <div id="modalOverlay"
          v-bind:class="{active: query.modal !== undefined}"
@@ -125,12 +124,15 @@ export default {
     position: fixed
     text-align: center
     width: 100px
-    z-index: 1
+    z-index: 2
 
     .option-icon
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
       height: 22px
       margin-top: 23px
-      width: 15px
+      width: 100%
 
     .option
       color: #fff

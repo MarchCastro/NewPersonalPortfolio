@@ -17,7 +17,7 @@
       <!-- Cards-->
       <div class="cards">
         <!-- Freelance card -->
-        <div class="card-item">
+        <div class="card-item" v-bind:class="{'open': cards.first.open}">
           <div class="experience-item">
             <div class="image" style="backgroundImage:url('img/Freelance.png')"></div>
 
@@ -26,15 +26,15 @@
 
             <div class="content">Recommendation system with indoor location.</div>
 
-            <img class="arrow" src="../assets/img/arrow_experience.png">
-
-            <div class="bottom-card-rectangle"></div>
+            <img class="arrow" v-on:click="cards.first.open = !cards.first.open" src="../assets/img/arrow_experience.png">
           
           </div>
-          <!--<div class="card">
-              <div class="title-card">Activities and tools</div>
-              <div class="content-card"> Adobe XD, Sketch, inVision, Zeplin, Illustrator. </div>
-          </div>-->
+          
+          <div class="card">
+            <div class="title-card">Activities and tools</div>
+            <div class="content-card"> Adobe XD, Sketch, inVision, Zeplin, Illustrator. </div>
+            <div class="bottom-card-rectangle"></div>
+          </div>
         </div>
 
         <!-- Business Analyst card -->
@@ -90,6 +90,21 @@
 
 <script>
 export default {
+  data: function () {
+    return {
+      cards: {
+        first: {
+          open: false
+        },
+        second: {
+          open: false
+        },
+        third: {
+          open: false
+        }
+      }
+    }
+  },
   name: 'ExperienceCard'
 }
 </script>
@@ -120,104 +135,111 @@ export default {
       border-radius: 8px
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
       display: inline-block
-      height: 342px
+      height: 353px
       margin-right: 60px
       position: relative
+      transition: all 0.3s
       vertical-align: top 
       width: calc(100%/3 - 40px)
 
       &:last-child
         margin-right: 0
 
-    .experience-item
-      height: 279px
-      z-index: 1
+      .experience-item
+        background: #FFF
+        border-radius: 0 0 8px 8px
+        height: 313px
+        position: relative
+        z-index: 2
 
-      .image
-        background-position: center
-        background-repeat: no-repeat
-        background-size: contain
-        height: 75px
-        margin: 30px 0 30px 0
-        vertical-align: middle
-        width: 100%
+        .image
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          height: 75px
+          margin: 30px 50px
+          vertical-align: middle
+          width: calc(100% - 100px)
 
-      .title
-        color: #364252
-        font-family: 'CarosBold'
-        font-size: 23px
-        text-align: center
-        width: 100%
-      
-      .date
-        color: #364252
-        font-family: 'CarosLight'
-        font-size: 13px
-        margin-top: 5px
-        margin-bottom: 25px
-        opacity: 0.65
-        text-align: center
-        width: 100%
+        .title
+          color: #364252
+          font-family: 'CarosBold'
+          font-size: 23px
+          text-align: center
+          width: 100%
+        
+        .date
+          color: #364252
+          font-family: 'CarosLight'
+          font-size: 13px
+          margin-top: 5px
+          margin-bottom: 25px
+          opacity: 0.65
+          text-align: center
+          width: 100%
 
-      .content
-        color: #364252
-        font-family: 'CarosLight'
-        font-size: 15px
-        margin-bottom: 25px
-        padding: 0 37px
-        text-align: center
-        width: calc(100% - 74px)
-      
-      .arrow
-        bottom: 35px
-        height: 13px
-        margin: 0 calc(50% - 12px)
-        position: absolute
-        width: 28px
-      
-      .bottom-card-rectangle
-        background-color: #b75e5f
-        bottom: 0
+        .content
+          color: #364252
+          font-family: 'CarosLight'
+          font-size: 15px
+          margin-bottom: 25px
+          padding: 0 37px
+          text-align: center
+          width: calc(100% - 74px)
+        
+        .arrow
+          bottom: 35px
+          cursor: pointer
+          height: 13px
+          margin: 0 calc(50% - 12px)
+          position: absolute
+          transition: all 0.3s
+          width: 28px
+
+      .card
+        background-color: #FFF
         border-bottom-left-radius: 8px
         border-bottom-right-radius: 8px
-        height: 10px
-        opacity: 0.75
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        border-style: hidden
+        bottom: 0
+        height: 127px
+        margin: 0
         position: absolute
         width: 100%
+        z-index: 0    
 
-    .card
-      background-color: #b75e5f
-      border-bottom-left-radius: 8px
-      border-bottom-right-radius: 8px
-      border-top-left-radius: 0
-      border-top-right-radius: 0
-      border-style: hidden
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
-      height: 127px
-      margin:0
-      opacity: 0.75
-      position: relative
-      width: 100%
-      z-index: 0
-      
+        .title-card
+          font-family: 'CarosMedium'
+          font-size: 15px
+          margin-top: 18px
+          text-align: center
+          width: 100%
+        
+        .content-card
+          font-family: 'CarosLight'
+          font-size: 13px
+          margin-top: 10px
+          padding: 0 37px
+          text-align: justify
+          width: calc(100% - 74px)
 
-      .title-card
-        color: #fff
-        font-family: 'CarosMedium'
-        font-size: 15px
-        margin-top: 18px
-        text-align: center
-        width: 100%
-      
-      .content-card 
-        color: #fff
-        font-family: 'CarosLight'
-        font-size: 13px
-        margin-top: 10px
-        padding: 0 37px
-        text-align: justify
-        width: calc(100% - 74px)
-  
+        .bottom-card-rectangle
+          background-color: #b75e5f
+          bottom: 0
+          border-bottom-left-radius: 8px
+          border-bottom-right-radius: 8px
+          height: 10px
+          opacity: 0.75
+          position: absolute
+          width: 100%
+    
+      &.open
+        height: 450px
+        img.arrow
+          transform: rotate3d(0, 0, 1, 180deg)
+    
   .oval
     border-radius: 50%
     position: absolute

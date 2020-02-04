@@ -1,5 +1,5 @@
 <template>
-  <div id="portfolioCard" class="section">
+  <div id="portfolioCard" class="section" v-bind:class="{open}">
     <div class="card">
       <!-- Decoration ovals -->
       <div class="oval one purple-one"></div>
@@ -69,7 +69,12 @@
         </div>
       </div>
       
-
+      <div class="see-more">
+        <button v-bind:class="{open}" v-on:click="open = !open">
+          <span v-if="!open">See More</span>
+          <span v-if="open">See less</span>
+        </button>
+      </div>
       <!-- <div class="subtitle-section"> Wireframes and sketches </div> -->
       <div class="cards"> 
         
@@ -83,7 +88,7 @@
         
         <!-- UserFlow Virgin Galactic -->
         <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
-          <img class="image" src="../assets/img/UserFlow_VG.png">
+          <div class="image" style="backgroundImage: url('/img/UserFlow_VG.png')"></div>
           <div class="overlay">
             <a href="www.facebook.com" target="_blank" class="text-overlay"> Actual Portfolio </a>
           </div>
@@ -158,6 +163,11 @@
 import router from '../router'
 
 export default {
+  data: function () {
+    return {
+      open: false
+    }
+  },
   methods: {
     openModal (modal) {
       router.push({ path: '', query: { modal: modal } })
@@ -171,7 +181,22 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
   @import "@/variables.sass"
+  
+  #portfolioCard
+    height: calc(100vh + 70px)
+    transition: all 0.3s
+    
+    .card
+      height: calc(100vh - 36px)
+      padding-bottom: 100px
+      transition: all 0.3s
 
+    &.open
+      height: 1766px
+
+      .card
+        height: 1657px
+  
   .title-page
     color: #364252
     font-family: 'CarosMedium'
@@ -194,16 +219,18 @@ export default {
     margin-top: 38px
 
   .cards
-    margin: 15px 80px 0 80px
+    margin: 15px 80px 0px 80px
     width: calc(100% - 160px)
 
     .portfolio-item
       border-radius: 8px
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+      cursor: pointer
       display: inline-block
-      height: 261px
+      height: 247px
       margin-bottom: 30px
       margin-right: 60px
+      position: relative
       width: calc(100%/3 - 40px)
     
       &:last-child
@@ -218,17 +245,21 @@ export default {
       &.purple-card
         background: $soft-purple
       
+      &:hover .overlay 
+        height: 100%
+
       .image
-          display: block
-          height: 207px
-          margin: 20px 20px
-          min-width: calc(100% - 40px)
+        background-size: contain
+        display: block
+        height: 207px
+        margin: 20px 20px
+        min-width: calc(100% - 40px)
       
       .mobile-image
-          display: block
-          height: 207px
-          margin: 20px 90px
-          min-width: calc(100% - 180px)
+        display: block
+        height: 207px
+        margin: 20px 90px
+        min-width: calc(100% - 180px)
   
       .overlay 
         background-color: #414141
@@ -250,8 +281,19 @@ export default {
           text-decoration: none
           position: absolute
       
-        &:hover .overlay 
-          height: 100%
+  .see-more
+    background: #FFF
+    bottom: 0
+    left: 0
+    position: absolute
+    width: 100%
+    z-index: 1
+    
+    button
+      display: block
+      height: 70px
+      margin: 0 auto 25px auto
+      width: 218px
   
   .oval
     border-radius: 50%
