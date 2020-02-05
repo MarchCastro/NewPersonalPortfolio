@@ -11,7 +11,7 @@
       <li>
         <a href="#homeCard">
           <div class="option-icon" style="backgroundImage:url('/img/menu-img/Home_option.svg')"></div>
-          <!--<div class="option-icon" style="backgroundImage:url('/img/menu-img/Home_option_hover.svg')"></div>-->
+          <div class="option-icon hover" style="backgroundImage:url('/img/menu-img/Home_option_hover.svg')"></div>
           <div class="option"> Home </div>
         </a>
       </li>
@@ -131,10 +131,10 @@ export default {
     background: #b75e5f
     border-top-right-radius: 14px
     border-bottom-right-radius: 14px
-    height: 455px
+    height: 365px
     left: 1
     margin-top: 180px
-    padding: 0
+    padding: 48px 0 0 0
     position: fixed
     text-align: center
     width: 100px
@@ -146,8 +146,10 @@ export default {
       background-size: contain
       cursor: pointer
       height: 22px
-      margin-top: 23px
-      width: 100%
+      left: -50px
+      position: absolute
+      top: -7px
+      width: 100px
 
     .option 
       color: #fff
@@ -155,12 +157,13 @@ export default {
       font-size: 10px
       text-decoration: none
     
-    a 
+    a
+      position: relative
       text-decoration: none
     
     li 
       list-style-type: none
-      margin-bottom: 36px
+      margin-bottom: 47px
     
     .option:hover
       color: #352d39

@@ -28,7 +28,7 @@
         <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
           <img class="image" src="../assets/img/Last_portfolio.png">
           <div class="overlay">
-            <a href="www.facebook.com" target="_blank" class="text-overlay"> Past Portfolio </a>
+            <a href="www.facebook.com" target="_blank" class="text-overlay"> Old Personal Portfolio </a>
           </div>
         </div>
 
@@ -71,7 +71,7 @@
       
       <div class="see-more">
         <button v-bind:class="{open}" v-on:click="open = !open">
-          <span v-if="!open">See More</span>
+          <span v-if="!open">See more</span>
           <span v-if="open">See less</span>
         </button>
       </div>
@@ -114,7 +114,7 @@
         
         <!-- Dog Door Interaction Map -->
         <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
-          <img class="image" src="../assets/img/DoggieDoor_InteractionMap.png">
+          <img class="image" style="backgroundImage: url('/img/DoggieDoor_InteractionMap.png')">
           <div class="overlay">
             <a href="www.facebook.com" target="_blank" class="text-overlay"> Interaction Map <br> UI/UX Especialization </a>
           </div>
@@ -292,10 +292,21 @@ export default {
     z-index: 1
     
     button
+      background-color: #b75e5f
+      border: 0px
+      border-radius: 4px
+      color: #ffff
       display: block
-      height: 70px
+      font-family: 'CarosMedium'
+      font-size: 14px
+      height: 52px
       margin: 0 auto 25px auto
-      width: 218px
+      width: 160px
+
+    button:hover  
+      background-color: #fff
+      border: 2px solid #b75e5f
+      color: #b75e5f
   
   .oval
     border-radius: 50%
