@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ul id="nav">
+    <ul id="nav" v-scroll-spy-active v-scroll-spy-link>
       <li>
         <a href="#homeCard">
           <div class="option-icon" style="backgroundImage:url('/img/menu-img/Menu_option.svg')"></div>
@@ -9,7 +9,7 @@
       </li>
 
       <li>
-        <a href="#homeCard">
+        <a href="#homeCard" v-bind:class="{active: currentCard === 'home'}">
           <div class="option-icon" style="backgroundImage:url('/img/menu-img/Home_option.svg')"></div>
           <div class="option-icon hover" style="backgroundImage:url('/img/menu-img/Home_option_hover.svg')"></div>
           <div class="option"> Home </div>
@@ -44,13 +44,16 @@
         </a>
       </li>
     </ul>
-
-    <HomeCard/>
-    <AboutMeCard/>
-    <ProfessionalBackgroundCard/>
-    <ExperienceCard/>
-    <PortfolioCard/>
-    <EducationCard/>
+    
+    <div v-scroll-spy>
+      <div></div>
+      <HomeCard/>
+      <AboutMeCard/>
+      <!-- <ProfessionalBackgroundCard/> -->
+      <ExperienceCard/>
+      <PortfolioCard/>
+      <EducationCard/>
+    </div>
 
     <portfolioModal :active="modal.active && modal.current === 'portfolio'"/>
     <!-- other modals -->
@@ -73,6 +76,14 @@ import EducationCard from './components/EducationCard.vue'
 import portfolioModal from './components/portfolioModal.vue'
 
 import router from './router'
+
+import Vue from 'vue'
+import Scrollspy from 'vue2-scrollspy'
+// use default options
+Vue.use(Scrollspy)
+
+// or custom options
+Vue.use(Scrollspy, {})
 
 export default {
   name: 'app',
@@ -160,18 +171,43 @@ export default {
     a
       position: relative
       text-decoration: none
+
+      .option-icon.hover
+        opacity: 0
     
     li 
       list-style-type: none
       margin-bottom: 47px
+
+      &.active
+        color: #352d39
+
+        .option
+          color: #352d39
+
+        .option-icon.hover
+          opacity: 1
     
-    .option:hover
-      color: #352d39
+    a:hover
+      .option
+        color: #352d39
+
+      .option-icon.hover
+        opacity: 1
 
   #app
     background-color: #321f37
     min-height: calc(100vh - 120px)
     font-family: 'CarosLight'
+
+  .nav
+    background: purple
+    left: 0
+    min-height: 200px
+    position: fixed
+    top: 0
+    width: 120px
+    z-index: 2
 
   .section    
     height: 100vh
