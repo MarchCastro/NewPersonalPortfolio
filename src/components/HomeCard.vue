@@ -42,21 +42,6 @@
         </a>
         
       </div>
-      
-      <div class="logo-images">
-          <a v-bind:href="url_angelist" target="_blank">
-              <img :src="angelist_logo" class="angelist">
-          </a>
-      </div>
-      <div class="logo-images">
-          <a v-bind:href="url_linkedin" target="_blank">
-              <img :src="linkedin_logo" class="linkedin">
-          </a>
-      </div>
-      <div class="logo-images">
-          <img :src="arrow_home" class="arrow">
-      </div>
-      
 
     </div>
   </div>

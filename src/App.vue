@@ -3,43 +3,47 @@
     <ul id="nav" v-scroll-spy-active v-scroll-spy-link>
       <li>
         <a href="#homeCard">
-          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Menu_option.svg')"></div>
-          <div class="option"> Menu </div>
+          <div class="option-icon" style="backgroundImage:url('/img/menu/Menu_option.svg')"></div>
+          <div class="option_header"> Menu </div>
         </a>
       </li>
 
       <li>
-        <a href="#homeCard" v-bind:class="{active: currentCard === 'home'}">
-          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Home_option.svg')"></div>
-          <div class="option-icon hover" style="backgroundImage:url('/img/menu-img/Home_option_hover.svg')"></div>
+        <a href="#homeCard">
+          <div class="option-icon" style="backgroundImage:url('/img/menu/Home_option.svg')"></div>
+          <div class="option-icon hover" style="backgroundImage:url('/img/menu/Home_option_hover.svg')"></div>
           <div class="option"> Home </div>
         </a>
       </li>
   
       <li>
         <a href="#aboutMeCard">
-          <div class="option-icon" style="backgroundImage:url('/img/menu-img/About_menu_option.svg')"></div>
+          <div class="option-icon" style="backgroundImage:url('/img/menu/About_menu_option.svg')"></div>
+          <div class="option-icon hover" style="backgroundImage:url('/img/menu/About_menu_option_hover.svg')"></div>
           <div class="option"> About me </div>
         </a>
       </li>
 
       <li>
         <a href="#experienceCard">
-          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Experience_option.svg')"></div>
+          <div class="option-icon" style="backgroundImage:url('/img/menu/Experience_option.svg')"></div>
+          <div class="option-icon hover" style="backgroundImage:url('/img/menu/Experience_option_hover.svg')"></div>
           <div class="option"> Experience </div>
         </a>
       </li>
 
       <li>
         <a href="#portfolioCard">
-          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Portfolio_option.svg')"></div>
+          <div class="option-icon" style="backgroundImage:url('/img/menu/Portfolio_option.svg')"></div>
+          <div class="option-icon hover" style="backgroundImage:url('/img/menu/Portfolio_option_hover.svg')"></div>
           <div class="option"> Portfolio </div>
         </a>
       </li>
 
       <li>
         <a href="#educationCard">
-          <div class="option-icon" style="backgroundImage:url('/img/menu-img/Education_option.svg')"></div>
+          <div class="option-icon" style="backgroundImage:url('/img/menu/Education_option.svg')"></div>
+          <div class="option-icon hover" style="backgroundImage:url('/img/menu/Education_option_hover.svg')"></div>
           <div class="option"> Education </div>
         </a>
       </li>
@@ -56,6 +60,7 @@
     </div>
 
     <portfolioModal :active="modal.active && modal.current === 'portfolio'"/>
+    <certificateModal :active="modal.active && modal.current === 'certificate'" />
     <!-- other modals -->
 
     <div id="modalOverlay"
@@ -74,6 +79,7 @@ import ExperienceCard from './components/ExperienceCard.vue'
 import EducationCard from './components/EducationCard.vue'
 
 import portfolioModal from './components/portfolioModal.vue'
+import certificateModal from './components/certificateModal.vue'
 
 import router from './router'
 
@@ -94,6 +100,7 @@ export default {
     PortfolioCard,
     ExperienceCard,
     EducationCard,
+    certificateModal,
     portfolioModal
   },
   computed: {
@@ -111,11 +118,22 @@ export default {
   },
   methods: {
     closeModal () {
-      router.push({ path: '', query: {} })
+      router.push({ query: {} })
     },
     openModal (modal) {
       router.push({ path: '', query: { modal: modal } })
       // this.$route = {modal: true, current: modal}
+    }
+  },
+  mounted () {
+    document.onkeydown = function(evt) {
+      evt = evt || window.event
+      // eslint-disable-next-line
+      console.log(evt.keyCode)
+      
+      if (evt.keyCode == 27) {
+        router.push({ query: {} })
+      }
     }
   }
 }
@@ -162,6 +180,12 @@ export default {
       top: -7px
       width: 100px
 
+    .option_header 
+      color: #fff
+      font-family: 'CarosLight'
+      font-size: 10px
+      text-decoration: none
+    
     .option 
       color: #fff
       font-family: 'CarosLight'

@@ -25,7 +25,7 @@
         </div>
 
         <!-- Past portfolio -->
-        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
+        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio', 'last')">
           <img class="image" src="../assets/img/Last_portfolio.png">
           <div class="overlay">
             <a href="www.facebook.com" target="_blank" class="text-overlay"> Old Personal Portfolio </a>
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Library practice -->
-        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
+        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio', 'library')">
           <img class="image" src="../assets/img/Library_practice.png">
           <div class="overlay">
             <a href="www.facebook.com" target="_blank" class="text-overlay"> Library Practice </a>
@@ -45,7 +45,7 @@
       <div class="cards"> 
         
         <!-- Sapphire app -->
-        <div class="portfolio-item green-card" v-on:click="openModal('portfolio')">
+        <div class="portfolio-item green-card" v-on:click="openModal('portfolio', 'sapphire')">
           <img class="mobile-image" src="../assets/img/Sapphire_1.png">
           <div class="overlay">
             <a href="www.facebook.com" target="_blank" class="text-overlay"> Sapphire Project</a>
@@ -53,7 +53,7 @@
         </div>
         
         <!-- Demente app -->
-        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio')">
+        <div class="portfolio-item blue-card" v-on:click="openModal('portfolio', 'demente')">
           <img class="mobile-image" src="../assets/img/Demente_1.png">
           <div class="overlay">
             <a href="www.facebook.com" target="_blank" class="text-overlay"> DEMENTE Project </a>
@@ -61,7 +61,7 @@
         </div>
         
         <!-- Heartbeat app -->
-        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio')">
+        <div class="portfolio-item purple-card" v-on:click="openModal('portfolio', 'heartbeat')">
           <img class="mobile-image" src="../assets/img/Heartbeat_1.png">
           <div class="overlay">
             <a href="www.facebook.com" target="_blank" class="text-overlay"> Hearbeat Monitor Practice <br> UI/UX Especialization</a>
@@ -169,8 +169,8 @@ export default {
     }
   },
   methods: {
-    openModal (modal) {
-      router.push({ path: '', query: { modal: modal } })
+    openModal (modal, detail) {
+      router.push({ path: '', query: { modal: modal, detail: detail} })
       // this.$route = {modal: true, current: modal}
     }
   },

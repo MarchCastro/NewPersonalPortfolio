@@ -18,9 +18,9 @@
           <p class="subtitle-card"> Spanish </p>
           <p class="content-card"> Native </p>
           <p class="subtitle-card"> English </p>
-          <p class="content-card"> FCE First Certificate B2 </p>
+          <p class="modal-text" v-on:click="openModal('certificate', 'fce')"> FCE First Certificate B2 </p>
           <p class="subtitle-card"> French </p>
-          <p class="content-card"> Delf B2 </p>
+          <p class="modal-text" v-on:click="openModal('certificate', 'delf')"> Delf B2 </p>
         </div>
 
         <!--Technologies card -->
@@ -69,7 +69,14 @@
 </template>
 
 <script>
+import router from '../router'
+ 
 export default {
+  methods: {
+    openModal (modal, detail) {
+      router.push({ path: '', query: { modal: modal, detail: detail} })
+    }
+  },
   name: 'ProfessionalKnowledgeCard'
 }
 </script>
@@ -145,6 +152,14 @@ export default {
     margin-left: 43px
     text-align: left
   
+  .modal-text
+    color: #b75e5f
+    cursor: pointer
+    font-family: 'CarosLight'
+    font-size: 13px
+    margin-left: 43px
+    text-align: left
+
   .slider-options
     display: inline-flex
     margin-left: 851px
