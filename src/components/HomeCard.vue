@@ -180,7 +180,7 @@ export default {
 
   @media screen and (min-width: 576px)
 
-  @media screen and (min-width: 1440px)
+  @media screen and (min-width: 1438px)
     .oval
       &.one
         height: 15px
@@ -277,8 +277,5 @@ export default {
         left: 1206px
         top: 668px
         width: 15px
-
-
-
 
 </style>

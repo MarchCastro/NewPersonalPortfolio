@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <ul id="nav" v-scroll-spy-active v-scroll-spy-link>
-      <li>
+      <!--<li>
         <a href="#homeCard">
           <div class="option-icon" style="backgroundImage:url('/img/menu/Menu_option.svg')"></div>
           <div class="option_header"> Menu </div>
         </a>
-      </li>
+      </li>-->
 
       <li>
         <a href="#homeCard">
@@ -50,7 +50,6 @@
     </ul>
     
     <div v-scroll-spy>
-      <div></div>
       <HomeCard/>
       <AboutMeCard/>
       <!-- <ProfessionalBackgroundCard/> -->
@@ -160,10 +159,10 @@ export default {
     background: #b75e5f
     border-top-right-radius: 14px
     border-bottom-right-radius: 14px
-    height: 365px
-    left: 1
+    height: 378px
+    left: 0
     margin-top: 180px
-    padding: 48px 0 0 0
+    padding: 10px 0 0 0
     position: fixed
     text-align: center
     width: 100px
@@ -175,9 +174,9 @@ export default {
       background-size: contain
       cursor: pointer
       height: 22px
-      left: -50px
+      left: 0
       position: absolute
-      top: -7px
+      top: 19px
       width: 100px
 
     .option_header 
@@ -186,22 +185,30 @@ export default {
       font-size: 10px
       text-decoration: none
     
-    .option 
+    .option
+      bottom: 0
       color: #fff
       font-family: 'CarosLight'
       font-size: 10px
+      position: absolute
+      text-align: center
       text-decoration: none
+      width: 100%
     
     a
+      display: block
+      height: 56px
       position: relative
       text-decoration: none
+      width: 100px
 
       .option-icon.hover
         opacity: 0
     
-    li 
+    li
+      height: 56px
       list-style-type: none
-      margin-bottom: 47px
+      margin-bottom: 16px
 
       &.active
         color: #352d39
@@ -209,12 +216,18 @@ export default {
         .option
           color: #352d39
 
+        .option-icon
+          opacity: 0
+
         .option-icon.hover
           opacity: 1
     
     a:hover
       .option
         color: #352d39
+
+      .option-icon
+        opacity: 0
 
       .option-icon.hover
         opacity: 1

@@ -28,7 +28,7 @@
           <img class="passion-icon" src="../assets/img/flat-icon-travel.png">
           <img class="passion-icon" src="../assets/img/flat-icon-draw.png">
         </div>
-        <a href="https://docs.google.com/document/d/1S1TakiBraD6ywFT-RbG5DzFS3cFNWPZnnKo_x60n--8/export?format=pdf" download>
+        <a href="/MarcelaCastroFlores_CV_vE_v2-2.pdf" download>
           <button class="button-cv">Download CV</button>
         </a>
       </div>

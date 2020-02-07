@@ -1,11 +1,11 @@
 <template>
   <div id="certificateModal" v-bind:class="{active: query.modal === 'certificate'}">
     <div v-if="query.detail === 'fce'">
-      <img class="image" style="backgroundImage: url('/img/certificates/FCE.jpg')">
+      <div class="image" style="backgroundImage: url('/img/certificates/FCE.jpg')"></div>
     </div>
 
     <div v-if="query.detail === 'delf'">
-      <img class="image" style="backgroundImage: url('/img/certificates/FCE.jpg')">
+      <div class="image" style="backgroundImage: url('/img/certificates/FCE.jpg')"></div>
     </div>
 
     <div class="close" v-on:click="closeModal()">
@@ -40,13 +40,13 @@ export default {
     background: #FFF
     border-radius: 4px
     height: 700px
-    margin: 0 450px
+    margin: 0 calc(100%/2 - 500px/2)
     opacity: 0
     pointer-events: none
     position: fixed
-    top: 50px
+    top: calc(100vh/2 - 700px/2)
     transition: all 0.3s
-    width: calc(100% - 900px)
+    width: 500px
     z-index: 10
 
     &.active
