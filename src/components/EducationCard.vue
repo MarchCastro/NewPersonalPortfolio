@@ -24,7 +24,7 @@
           <div class="card">
             <img class="image" src="../assets/img/CIA.png">
             <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Visual Elements of User Interface Design </a>
+              <a class="text-overlay modal" v-on:click="openModal('portfolio', 'Coursera')"> Visual Elements of User Interface Design </a>
             </div>
           </div>
           
@@ -39,7 +39,7 @@
           <div class="card">
             <img class="image" src="../assets/img/UTC.png">
             <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Informatic Engineering </a>
+              <a class="text-overlay"> Informatic Engineering </a>
             </div>
           </div>
 
@@ -54,7 +54,7 @@
           <div class="card">
             <img class="image" src="../assets/img/ESCOM.png"> 
             <div class="overlay">
-              <a href="www.facebook.com" target="_blank" class="text-overlay"> Computing Systems Engineering </a>
+              <a class="text-overlay"> Computing Systems Engineering </a>
             </div>
           </div>
 
@@ -68,9 +68,23 @@
 </template>
 
 <script>
+import router from '../router'
+
 export default {
+  data: function () {
+    return {
+      open: false
+    }
+  },
+  methods: {
+    openModal (modal, detail) {
+      router.push({ path: '', query: { modal: modal, detail: detail} })
+      // this.$route = {modal: true, current: modal}
+    }
+  },
   name: 'EducationCard'
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -153,6 +167,9 @@ export default {
             margin: 18px
             text-decoration: none
             position: absolute
+          
+          .modal 
+            cursor: pointer
         
         &:hover .overlay 
           height: 30%

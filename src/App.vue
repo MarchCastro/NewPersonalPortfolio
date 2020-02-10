@@ -62,6 +62,9 @@
     <certificateModal :active="modal.active && modal.current === 'certificate'" />
     <!-- other modals -->
 
+    <!--<div id="no-compatible-resolution"></div>
+    <div class="construction"> Sorry :( </div>-->
+ 
     <div id="modalOverlay"
          v-bind:class="{active: query.modal !== undefined}"
          v-on:click="closeModal()"></div>
@@ -264,6 +267,27 @@ export default {
       position: relative
       width: calc(100vw - 100px)
 
+  #no-compatible-resolution
+    background: #000
+    color: red
+    height: 100vh
+    left: 0
+    opacity: 0.8
+    position: fixed
+    top: 0
+    width: 100vw
+    z-index: 200
+
+  .construction
+    background-color: white
+    margin: 50px 50px
+    height: 500px
+    position: fixed
+    z-index: 201
+    top: 0
+    left: 0
+    width: 500px
+
 
   #modalOverlay
     background: #000
@@ -281,7 +305,12 @@ export default {
       opacity: 0.9
       pointer-events: all
 
-  @media screen and (min-width: 1440px)
+  @media screen and (min-width: 1400px)
+    #no-compatible-resolution
+      display: none
+    .construction
+      display: none
+
     .card
       margin: 0 auto
 

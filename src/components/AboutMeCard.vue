@@ -146,6 +146,7 @@ export default {
     height: 36px
     margin-left: 1012px
     margin-top: 46px
+    outline: none
     width: 165px
   
   .button-cv:hover
