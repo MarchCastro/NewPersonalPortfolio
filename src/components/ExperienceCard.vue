@@ -24,7 +24,7 @@
             <div class="title"> Freelancer </div>
             <div class="date"> Jan 2019 - Present </div>
 
-            <div class="content">Recommendation system with indoor location.</div>
+            <div class="content">UI/UX Designer of a recommendation system with indoor location and a rescue animal app.</div>
 
             <img class="arrow" v-on:click="cards.first.open = !cards.first.open" src="../assets/img/arrow_experience.png">
           
@@ -47,7 +47,7 @@
             <div class="title"> Business Analyst </div>
             <div class="date"> Jan 2019 - Present </div>
 
-            <div class="content"> Business analysis focused on supply’s chain logistics software. </div>
+            <div class="content"> Business analyst focused on the analysis and design of documentation for the supply’s chain logistics software. </div>
 
             <img class="arrow" v-on:click="cards.second.open = !cards.second.open" src="../assets/img/arrow_experience.png">
             
@@ -70,7 +70,7 @@
             <div class="title"> Internship </div>
             <div class="date"> Feb 2018 - Aug 2018 </div>
 
-            <div class="content">Processes simulation system for the National Refination System plants of PEMEX to certificate plant operators.</div>
+            <div class="content">UI and Web dev. on a processes simulation system for the National Refination System plants of PEMEX to certificate plant operators.</div>
 
             <img class="arrow" v-on:click="cards.third.open = !cards.third.open" src="../assets/img/arrow_experience.png">
 
@@ -175,7 +175,7 @@ export default {
           font-family: 'CarosLight'
           font-size: 13px
           margin-top: 5px
-          margin-bottom: 25px
+          margin-bottom: 15px
           opacity: 0.65
           text-align: center
           width: 100%

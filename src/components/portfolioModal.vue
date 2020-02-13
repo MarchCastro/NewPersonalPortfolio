@@ -4,9 +4,9 @@
       <div class="content">
         <div class="content-text desktop-content">
           <div class="title desktop-title">New Portfolio</div>
-          <div class="description desktop-description">The site you're actually looking at, was designed and developed by me using
+          <div class="description desktop-description">Welcome to my own website! <br> <br>It was designed and developed by me using
             Sketch for prototyping, Zeplin as a CSS guideline and Vue framework for the front-end development.
-            <br> Please continue scrolling to find out a little bit more about me.
+            <br> Please continue scrolling to find out a little bit more about me and the work I've done.
           </div>
         </div>
         <div class="content-image desktop-image">
@@ -19,8 +19,8 @@
       <div class="content">
         <div class="content-text desktop-content">
           <div class="title desktop-title">Old Portfolio</div>
-          <div class="description desktop-description">This was used to be my last portfolio but unlike the present one,
-            this one was only designed by me using a predefined template. Nevertheless, it was also helpful to practice and get started
+          <div class="description desktop-description">This used to be my last portfolio but unlike the present one,
+            this was only designed by me using a predefined template. Nevertheless, it was also helpful to practice and get started
             into the UI/UX world.
           </div>
           <div class="content-link">
@@ -62,9 +62,10 @@
       <div class="content">
         <div class="content-text mobile-content">
           <div class="title mobile-title">Sapphire</div>
-          <div class="description mobile-description">Recommendation system with indoor location. Throughout a mobile app, mall clients 
-            have the possibility to know when and where some of their favorite products may have a discount and by recommendation, 
-            they can find some other products they might like. 
+          <div class="description mobile-description">Recommendation system with indoor location. <br>This mobile app offers mall clients 
+            the possibility to know when and where some of their favorite products may have a discount. This app works with small bluetooth
+            trasmitters which allow to locate the clients location inside any store or mall and by the use of their shopping data, the 
+            app sends different products the client might like or discounts on products they actually buy.
           </div>
           <div class="content-link">
             <div class="icon" style="backgroundImage: url('/img/portfolio-modal/play-arrow.svg')"></div>
@@ -109,9 +110,9 @@
         <div class="content-text mobile-content">
           <div class="title desktop-title">SEEmotions!</div>
           <div class="description desktop-description">As a part of the UI/UX Specialization in Coursera and as a practical activity
-            I developed the imaginary mobile app SEEmotions! which allowed young adults to monitor their heartbeat in three different stages, 
+            I developed the imaginary mobile app SEEmotions! which allowed young adults to monitor their heartbeat during a roller coaster ride. It worked in three different stages, 
             the first one will be while they are waiting in line, the second one during the ride and finally, the third one while they are 
-            descending from the roller coaster. <br> <br>
+            descending from their ride. <br> <br>
             It considered a moodboard, a pattern library and mockups.
           </div>
           <div class="content-link">
@@ -130,7 +131,7 @@
     <div v-if="query.detail === 'virgin'">
       <div class="content">
         <div class="content-text desktop-content">
-          <div class="title desktop-title">Wireframes</div>
+          <div class="title desktop-title">Virgin Galactic's Wireframes</div>
           <div class="description desktop-description"> This visual guidance, shows the general idea of the re-design
             that Virgin Galactic is asking for, in order to get more collaborators and investors. It considers the paths
             of the user flow and the actual options that the website provides to achieve this goal, showed on the task flow diagram.
@@ -154,14 +155,14 @@
     <div v-if="query.detail === 'virgin2'">
       <div class="content">
         <div class="content-text desktop-content">
-          <div class="title desktop-title">User Flow</div>
+          <div class="title desktop-title">Virgin Galactic's User Flow</div>
           <div class="description desktop-description">This user flow allows us to know which are the different and possible paths to
-            do different tasks, determining the easiest and common ways to accomplish a duty.
+            perform different actions, determining the easiest and most common ways to accomplish a task.
           </div>
           <div class="content-link">
             <a href="https://1drv.ms/b/s!At-_o93wWwxwqX89PRhFiXaPtwOf" target="_blank">
               <div class="icon" style="backgroundImage: url('/img/portfolio-modal/diagram.svg')"></div>
-              <div class="subtitle desktop-link-width" v-on:click="playSapphireVideo()">Go to the interaction</div>
+              <div class="subtitle desktop-link-width" v-on:click="playSapphireVideo()">Watch the diagram</div>
             </a>
             <a href="https://drive.google.com/file/d/1EHUNjtw1gRFTbwKG0qGztmUqkLOoP2ey/view?usp=sharing" target="_blank">
               <div class="subtitle desktop-link-width pdf" v-on:click="playSapphireVideo()">Explore the complete analysis</div>
@@ -177,14 +178,14 @@
     <div v-if="query.detail === 'virgin3'">
       <div class="content">
         <div class="content-text desktop-content">
-          <div class="title desktop-title">Task Flow</div>
+          <div class="title desktop-title">Virgin Galactic's Task Flow</div>
           <div class="description desktop-description">The following task flow diagram shows the way a user can become a collaborator
             within Virgin Galactic's platform. It navigates through all the possible paths that leads him to the mentioned purpose.
           </div>
           <div class="content-link">
             <a href="https://1drv.ms/b/s!At-_o93wWwxwqgMxfEp4np3M7Rit" target="_blank">
               <div class="icon" style="backgroundImage: url('/img/portfolio-modal/diagram.svg')"></div>
-              <div class="subtitle desktop-link-width" v-on:click="playSapphireVideo()">Go to the interaction</div>
+              <div class="subtitle desktop-link-width" v-on:click="playSapphireVideo()">Watch the diagram</div>
             </a>
             <a href="https://drive.google.com/file/d/1EHUNjtw1gRFTbwKG0qGztmUqkLOoP2ey/view?usp=sharing" target="_blank">
               <div class="subtitle desktop-link-width pdf" v-on:click="playSapphireVideo()">Explore the complete analysis</div>
@@ -197,27 +198,128 @@
       </div>
     </div>
 
-    <div v-if="query.detail === 'library'">
+    <div v-if="query.detail === 'animal'">
       <div class="content">
         <div class="content-text desktop-content">
-          <div class="title desktop-title">Sitemap </div>
-          <div class="description desktop-description">Online bookstore focused on showing the user an easy to use platform.
-             <br> It shows the main path that a client have to follow in order to find an specific book
-              with it's respective information, indicating which other actions he can do such as finding
-              book descriptions and the account settings.
+          <div class="title desktop-title">Rescue Animal App</div>
+          <div class="description desktop-description">This sitemap shows the general navigation and parameters that this app
+            mobile app will consider in each of it's four functionalities which are rescue lost pets, share found 
+            pets and adopt or help adoption organizations. <br>
           </div>
           <div class="content-link">
-            <a href="https://projects.invisionapp.com/share/H8U4U9O372P" target="_blank">
-              <div class="icon" style="backgroundImage: url('/img/portfolio-modal/invision.png')"></div>
-              <div class="subtitle desktop-link-width">Go to the interaction</div>
+            <a href="https://drive.google.com/file/d/1oMtwNKEGBTKPUUVLXpBqHjym9xd9odlM/view?usp=sharing" target="_blank">
+              <div class="icon" style="backgroundImage: url('/img/portfolio-modal/diagram.svg')"></div>
+              <div class="subtitle desktop-link-width" v-on:click="playSapphireVideo()">Watch the diagram</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1U1Czv5C7pS2jUcdE9NISGfgosZSfLquk/view?usp=sharing" target="_blank">
+              <div class="subtitle desktop-link-width pdf" v-on:click="playSapphireVideo()">Explore the sitemap analysis</div>
             </a>
           </div>
         </div>
         <div class="content-image desktop-image">
-          <div class="image" style="backgroundImage: url('/img/portfolio-modal/library.png')"></div>
+          <div class="image" style="backgroundImage: url('/img/portfolio-modal/rescue-app.png')"></div>
         </div>
       </div>
     </div>
+
+    <div v-if="query.detail === 'doggie'">
+      <div class="content">
+        <div class="content-text desktop-content">
+          <div class="title desktop-title">Doggie door</div>
+          <div class="description desktop-description">This interaction map, shows some of the most important functionalities 
+            that the app could have. The doggie door app's goal is to provide the owner dog and easy way to
+            open or program and automatic door on the pet's house, so he can go out for a walk in certain hours of the day. <br> 
+          </div>
+          <div class="content-link">
+            <a href="https://drive.google.com/file/d/1p4-SLDd3fgSfn4oLwGaUUoBV8q4p4omB/view?usp=sharing" target="_blank">
+              <div class="icon" style="backgroundImage: url('/img/portfolio-modal/diagram.svg')"></div>
+              <div class="subtitle desktop-link-width">Watch the diagram</div>
+            </a>
+          </div>
+        </div>
+        <div class="content-image desktop-image">
+          <div class="image" style="backgroundImage: url('/img/portfolio-modal/doogie-door.png')"></div>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="query.detail === 'shoes'">
+      <div class="content">
+        <div class="content-text desktop-content">
+          <div class="title desktop-title">Shoe store</div>
+          <div class="description desktop-description"> This content map for a shoe store, shows the main functionalities that this
+            website has so that any of their users can buy their products or directly watch the shoes in a physical store.
+
+          </div>
+          <div class="content-link">
+            <a href="https://projects.invisionapp.com/share/H8U4U9O372P" target="_blank">
+              <div class="icon" style="backgroundImage: url('/img/portfolio-modal/diagram.svg')"></div>
+              <div class="subtitle desktop-link-width">Watch the diagram</div>
+            </a>
+          </div>
+        </div>
+        <div class="content-image desktop-image">
+          <div class="image" style="backgroundImage: url('/img/portfolio-modal/shoe-store.png')"></div>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="query.detail === 'animal2'">
+      <div class="content">
+        <div class="content-text desktop-content">
+          <div class="title desktop-title">Rescue Animal App Sketch</div>
+          <div class="description desktop-description"> This sketch shows part of the considered screens 
+            and paths that the rescue animal app should have to provide the rescue lost pets, share found pets and adopt
+            or help adoption organizations functionalities.
+          </div>
+          <div class="content-link">
+            <a href="https://drive.google.com/file/d/1U1Czv5C7pS2jUcdE9NISGfgosZSfLquk/view?usp=sharing" target="_blank">
+              <div class="icon" style="backgroundImage: url('/img/portfolio-modal/website.svg')"></div>
+              <div class="subtitle desktop-link-width">Explore the sitemap analysis</div>
+            </a>
+          </div>
+        </div>
+        <div class="content-image desktop-image">
+          <div class="image" style="backgroundImage: url('/img/portfolio-modal/Sketch_3.jpeg')"></div>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="query.detail === 'virgin4'">
+      <div class="content">
+        <div class="content-text desktop-content">
+          <div class="title desktop-title">Virgin Galactic Challenge Sketch</div>
+          <div class="description desktop-description">This image shows some of the sketched screens that were used
+            on the ideation step to create a new proposal for the Virgin Galactic's mobile app.
+          </div>
+          <div class="content-link">
+            <a href="https://drive.google.com/file/d/1EHUNjtw1gRFTbwKG0qGztmUqkLOoP2ey/view?usp=sharing" target="_blank">
+              <div class="icon" style="backgroundImage: url('/img/portfolio-modal/website.svg')"></div>
+              <div class="subtitle desktop-link-width">Explore the complete analysis</div>
+            </a>
+          </div>
+        </div>
+        <div class="content-image desktop-image">
+          <div class="image" style="backgroundImage: url('/img/portfolio-modal/virgin-sketch.jpeg')"></div>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="query.detail === 'messages'">
+      <div class="content">
+        <div class="content-text desktop-content">
+          <div class="title desktop-title">Messages course</div>
+          <div class="description desktop-description">As a part of a UX Course which was based on the importance of showing
+            the user the correct action to do after any problem, this image shows some of the sketched alert messages, 
+            in this particular case, for a cinema website.
+          </div>
+        </div>
+        <div class="content-image desktop-image">
+          <div class="image" style="backgroundImage: url('/img/portfolio-modal/Sketch_2.jpeg')"></div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Education card -->
     <div v-if="query.detail === 'Coursera'">
@@ -289,6 +391,7 @@ export default {
       pointer-events: all
 
     .close
+      cursor: pointer
       height: 20px
       position: absolute
       right: 15px

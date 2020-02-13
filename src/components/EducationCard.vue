@@ -12,7 +12,7 @@
 
       <!-- Title page -->
       <div class="title-page"> Education </div>
-      <div class="subtitle-page"> Here, you can find the places where I've learned. </div>
+      <div class="subtitle-page"> Here, you can find the places where I've studied. </div>
 
       <!-- Cards-->
       <div class="cards">

@@ -62,9 +62,18 @@
     <certificateModal :active="modal.active && modal.current === 'certificate'" />
     <!-- other modals -->
 
-    <!--<div id="no-compatible-resolution"></div>
-    <div class="construction"> Sorry :( </div>-->
- 
+    <!-- <div id="no-compatible-resolution" v-bind:class="{active: query.modal === 'no-compatible'}"></div> -->
+    <div class="construction" v-bind:class="{active: query.modal === 'no-compatible'}"> 
+      <div class="content">
+        <div class="title">We're still under construction</div>
+        <div class="image" style="backgroundImage: url('/videos/responsive_modal.gif')"></div>
+        <div class="description">Sorry for the interaction problems, this website is still getting ready.
+          For a better visualization, the best resolution screen is 1440px. <br><br>
+        Thanks for understanding.
+        </div>
+      </div>
+    </div>
+    
     <div id="modalOverlay"
          v-bind:class="{active: query.modal !== undefined}"
          v-on:click="closeModal()"></div>
@@ -136,6 +145,12 @@ export default {
       if (evt.keyCode == 27) {
         router.push({ query: {} })
       }
+    }
+    
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    
+    if (vw < 1438) {
+      router.push({ path: '', query: { modal: 'no-compatible' } })
     }
   }
 }
@@ -272,22 +287,64 @@ export default {
     color: red
     height: 100vh
     left: 0
-    opacity: 0.8
+    opacity: 0
+    pointer-events: none
     position: fixed
     top: 0
+    transition: all 0.3s
     width: 100vw
     z-index: 200
 
-  .construction
-    background-color: white
-    margin: 50px 50px
-    height: 500px
-    position: fixed
-    z-index: 201
-    top: 0
-    left: 0
-    width: 500px
+    &.active
+      opacity: 0.8
+      pointer-events: all
 
+  .construction
+    background: #FFF
+    border-radius: 4px
+    height: 500px
+    margin: auto 350px 
+    opacity: 0
+    pointer-events: none
+    position: fixed
+    top: 150px
+    transition: all 0.3s
+    vertical-align: center
+    width: calc(100% - 700px)
+    z-index: 10
+
+    &.active
+      opacity: 1
+      pointer-events: all
+    
+    .content
+      margin: 50px 40px 50px 40px
+      width: calc(100% - 80px)
+      
+      .title
+        color: #573350
+        display: block
+        font-family: 'CarosBold'
+        font-size: 25px
+        text-align: center
+        text-transform: uppercase
+
+        .subtitle
+          text-align: center
+      
+      .description
+        color: #573350
+        font-family: 'CarosLight'
+        font-size: 15px
+        text-align: justify
+      
+      .image
+          background: no-repeat
+          background-size: contain
+          background-position: center
+          height: 280px
+          opacity: 1
+          width: calc(100%)
 
   #modalOverlay
     background: #000

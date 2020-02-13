@@ -57,7 +57,7 @@
           <div class="title-card-div">
             <p class="title-card"> Dev. tools </p>
           </div>
-          <p class="subtitle-card"> Dev. Languages </p>
+          <p class="content-card"> HTML/CSS </p>
           <p class="content-card"> Java </p>
           <p class="content-card"> C/C++ </p>
           <p class="subtitle-card"> Databases </p>

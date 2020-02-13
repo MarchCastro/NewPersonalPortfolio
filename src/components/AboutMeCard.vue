@@ -17,8 +17,14 @@
 
         <div class="title-page"> Who am I? </div>
 
-        <div class="description"> I’m a Software Engineer with a growing interest on UI/UX Design from Mexico City. I recently discovered that in this area I can explote all my passions such as designing and drawing.
-          <br> <br>I know that no mather how much time I spend working, I won't get bored because at the end it's all about making art and doing what you love. </div>
+        <div class="description"> I’m a UI/UX designer from Mexico City, with a degree in Computing Systems Engineering. 
+          I have experience in Business Analysis and this area has helped me approach in a better way to both the client and
+          the final user which is sometimes an advantage to create better scenarios and to think in all the content and the 
+          expected interaction for a user.
+          
+          <br> <br> I really like working in this area because I can explote all my passions such as designing and drawing and I know 
+          that no mather how much time I spend working, I won't get bored because at the end it's all about making art and doing 
+          what I love. </div>
 
         <!-- Passions icons -->
         <div class="passion-icon-div">
