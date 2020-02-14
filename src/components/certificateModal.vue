@@ -5,7 +5,7 @@
     </div>
 
     <div v-if="query.detail === 'delf'">
-      <div class="image" style="backgroundImage: url('/img/certificates/FCE.jpg')"></div>
+      <div class="image" style="backgroundImage: url('/img/certificates/DELF.jpeg')"></div>
     </div>
 
     <div class="close" v-on:click="closeModal()">
